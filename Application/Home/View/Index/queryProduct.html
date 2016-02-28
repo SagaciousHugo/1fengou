@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>商品列表</title>
+</head>
+<body>
+<p>商品列表：</p>
+<volist name="productList" id="vo">
+        <p>id：{$vo['id']}</p>
+        <p>商品名：{$vo['name']}</p>
+        <p>价格：{$vo['price']}元</p>
+        <p>缩略图 <img src="__PUBLIC__/Resources/images/{$vo['thumbnail']}.jpg" width="100" height="100" alt="" /></p>
+        <p>销售量：{$vo['sales']}</p>
+    <br/>
+</volist>
+</body>
+</html>

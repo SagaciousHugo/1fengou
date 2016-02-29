@@ -14,9 +14,42 @@ class IndexController extends Controller {
     }
 
     public function queryProduct(){
-        $User = M('Product');
+        $User = D('Product');
         $data = $User->select();
         $this->assign('productList',$data);
         $this->display();
+    }
+
+    public function createProduct(){
+        $this->display();
+    }
+
+    public function addProduct(){
+        header("Content-Type:text/html;charset=utf-8");
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =      './Public/Resources/Images'; // 设置附件上传根目录
+        $upload->savePath  =      ''; // 设置附件上传（子）目录
+        // 上传文件
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+            $this->error($upload->getError());
+        }else{// 上传成功 获取上传文件信息
+            foreach($info as $file){
+                $data['thumbnail'] = "Resources/Images".$file['savepath'].$file['savename'];
+            }
+            $data['id'] = $_POST['id'];
+            $data['name'] = $_POST['name'];
+            $data['price'] = $_POST['price'];
+            $data['introduce'] = $_POST['introduce'];
+            $data['sales'] = '0';
+            $User = D('Product');
+            if($User->add($data)){
+                echo "商品信息创建成功！";
+            } else {
+                $this->error('商品信息创建失败！');
+            }
+        }
     }
 }

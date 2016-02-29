@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <title>1fengou</title>
@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="__PUBLIC__/Resources/images/logo.png" width="111" height="30" alt="1fengou logo" /></a>
+                <a class="navbar-brand" href="#"><img src="/1fengou/Public/Resources/images/logo.png" width="111" height="30" alt="1fengou logo" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,7 +41,6 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
                     <li><a href="#">购物车</a></li>
-                    <li><a href="http://localhost/1fengou/index.php/home/Index/createProduct">创建商品</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">商品分类<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -73,19 +72,17 @@
                 <h2>每日精选</h2>
 
                 <div name="product_detail">
-                    <volist name="productList" id="vo">
-                        <div>
-                        <img src="__PUBLIC__/{$vo['thumbnail']}" alt="商品缩略图"/>
-                        <h3>{$vo['name']}</h3>
-                        <p>价格：￥{$vo['price']}</p>
-                        <p>简介：{$vo['introduce']}</p>
-                        <p>已售：{$vo['sales']}</p>
+                    <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div>
+                        <img src="/1fengou/Public/Resources/images/<?php echo ($vo['thumbnail']); ?>.jpg" alt="商品缩略图"/>
+                        <h3><?php echo ($vo['name']); ?></h3>
+                        <p>价格：￥<?php echo ($vo['price']); ?></p>
+                        <p>简介：<?php echo ($vo['introduce']); ?></p>
+                        <p>已售：<?php echo ($vo['sales']); ?></p>
                             <a href="#" class="btn btn-info btn-lg active" role="button">查看详情</a>
                             <a href="#" class="btn btn-danger btn-lg active" role="button">立即购买</a>
                             <a href="#" class="btn btn-success btn-lg active" role="button">加入购物车</a>
                         </div>
-                        <br/>
-                    </volist>
+                        <br/><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
             </div>
 

@@ -1,0 +1,13 @@
+body {
+    background-color: #CCC;
+    padding: 50px;
+    font-family: "Microsoft YaHei UI";
+}
+img {float:left}
+/*div.info {
+    float: left;
+}*/
+footer{
+    text-align:center;
+    height: 60px;         /* footer的高度一定要是固定值*/
+}

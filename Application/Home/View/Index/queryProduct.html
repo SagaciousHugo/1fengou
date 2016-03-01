@@ -9,7 +9,7 @@
                 <h2>每日精选</h2>
                 <div name="product_detail">
                     <volist name="productList" id="vo">
-                        <img width="150" height="150" src="__PUBLIC__/Resources/Images/{$vo['thumbnail']}.jpg" alt="商品缩略图"/>
+                        <img width="150" height="150" src="__PUBLIC__/{$vo['thumbnail']}" alt="商品缩略图"/>
                         <div class="info">
                             <h3>{$vo['name']}</h3>
                             <p><span><i class="fa fa-cny"></i> 价格</span>：{$vo['price']}</p>

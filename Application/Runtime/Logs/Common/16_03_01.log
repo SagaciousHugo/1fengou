@@ -142,3 +142,201 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
 ERR: 无法加载模块:Public
 
+[ 2016-03-01T16:53:15+08:00 ] ::1 /1fengou/Public/Resources/Images/Resources/Images2016-03-01/56d532a8c4b6b.jpg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:53:23+08:00 ] ::1 /1fengou/Public/Resources/Images/Resources/Images2016-03-01/56d532a8c4b6b.jpg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:54:17+08:00 ] ::1 /1fengou/Public/Resources/Images/Resources/Images2016-03-01/56d558abeaa06.png.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:54:17+08:00 ] ::1 /1fengou/Public/Resources/Images/Resources/Images2016-03-01/56d532a8c4b6b.jpg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001847s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/20160228091840.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/20160228091916.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/20160228091932.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/20160228091944.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/20160228091955.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002295s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/20160228092009.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001356s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/Resources/Images2016-03-01/56d558abeaa06.png.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:58:37+08:00 ] ::1 /1fengou/Public/Resources/Images2016-03-01/56d532a8c4b6b.jpg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:59:35+08:00 ] ::1 /1fengou/Public/20160228091840
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:59:35+08:00 ] ::1 /1fengou/Public/20160228091916
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:59:35+08:00 ] ::1 /1fengou/Public/20160228092009
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001604s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:59:35+08:00 ] ::1 /1fengou/Public/20160228091944
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:59:35+08:00 ] ::1 /1fengou/Public/20160228091955
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T16:59:35+08:00 ] ::1 /1fengou/Public/20160228091932
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228091840.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228091955.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228092009.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228091932.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228091944.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001476s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228091916.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:01:20+08:00 ] ::1 /1fengou/Public/20160228091840.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091840.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091916.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091932.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091944.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091955.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228092009.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091840.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-01T17:02:11+08:00 ] ::1 /1fengou/Public/20160228091916.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001592s ]
+ERR: 无法加载模块:Public
+

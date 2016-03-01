@@ -67,7 +67,7 @@
             <div class='col-md-8'>
                 <h2>每日精选</h2>
                 <div name="product_detail">
-                    <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img width="150" height="150" src="/1fengou/Public/Resources/Images/<?php echo ($vo['thumbnail']); ?>.jpg" alt="商品缩略图"/>
+                    <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img width="150" height="150" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
                         <div class="info">
                             <h3><?php echo ($vo['name']); ?></h3>
                             <p><span><i class="fa fa-cny"></i> 价格</span>：<?php echo ($vo['price']); ?></p>

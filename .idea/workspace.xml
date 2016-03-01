@@ -4,21 +4,24 @@
     <bookmark url="file://$PROJECT_DIR$" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9173cec-c4ea-4041-b597-64e1c908d58b" name="Default" comment="创建商品页面样式修改；&#10;增加表单验证；&#10;增加商品缩略图预览；&#10;页面跳转时导航栏选中项相应改变；">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/56d532a8c4b6b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4ebe67d4b0b817007345bdb120321d83.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/messages_zh.js" />
+    <list default="true" id="c9173cec-c4ea-4041-b597-64e1c908d58b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228091840.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228091916.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228091932.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228091944.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228091955.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228092009.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228092020.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/20160228092034.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/56d558abeaa06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-01/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Base/common.html" afterPath="$PROJECT_DIR$/Application/Home/View/Base/common.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/createProduct.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/createProduct.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Public/header.html" afterPath="$PROJECT_DIR$/Application/Home/View/Public/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/50d54e86c2de63334fbf1d7a55c2c0a7.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/50d54e86c2de63334fbf1d7a55c2c0a7.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/83a12942f7f3715015f33aff265bf099.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/83a12942f7f3715015f33aff265bf099.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Common/16_03_01.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/16_03_01.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_01.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_01.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/css/common.css" afterPath="$PROJECT_DIR$/Public/css/common.css" />
     </list>
     <ignored path="thinkphp3.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,141 +49,83 @@
     <favorites_list name="thinkphp3.2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6221122">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.5">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                  <folding>
-                    <marker date="1456802332341" expanded="true" signature="446:465" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="queryProduct.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="12.857142">
-                  <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="4ebe67d4b0b817007345bdb120321d83.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Home/4ebe67d4b0b817007345bdb120321d83.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.42877293">
-                  <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="306816884963ff3bc7aff613b3b94a9d.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Home/306816884963ff3bc7aff613b3b94a9d.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="50.67857">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="20914c0f075f91df3579ffbdf5180b02.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Home/20914c0f075f91df3579ffbdf5180b02.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="83a12942f7f3715015f33aff265bf099.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Home/83a12942f7f3715015f33aff265bf099.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="13d35fab76c0a5cb9d07671acb014ca9.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Home/13d35fab76c0a5cb9d07671acb014ca9.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="common.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Home/View/Base/common.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.142858">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="createProduct.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/createProduct.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.26798308">
-                  <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-                  <folding>
-                    <element signature="n#style#0;n#textarea#0;n#p#3;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Public/css/common.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.75">
-                  <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/footer.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.3571428">
-                  <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/header.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.857142">
-                  <caret line="16" column="38" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.5">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1456802332341" expanded="true" signature="446:465" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryProduct.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.178572">
+              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Base/common.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.142858">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createProduct.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/createProduct.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3568406">
+              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#p#3;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.75">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3571428">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.857142">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -216,8 +161,8 @@
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload/Driver/Bcs/bcs.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Base/common.html" />
         <option value="$PROJECT_DIR$/Public/css/common.css" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Public/header.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Index/createProduct.html" />
       </list>
     </option>
@@ -281,13 +226,14 @@
     <property name="SearchEverywhereHistoryKey" value="__public__&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\1fengou" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\WampServer\wamp64\www\1fengou\Public\Resources\Images2016-03-01" />
       <recent name="C:\wamp\www\thinkphp_3.2.3_full\Application\Home\View\Index" />
       <recent name="C:\wamp\www\thinkphp_3.2.3_full\Public\Resources" />
       <recent name="C:\wamp\www\thinkphp_3.2.3_full\Public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\1fengou" />
     </key>
   </component>
   <component name="RunManager">
@@ -391,19 +337,25 @@
       <option name="project" value="LOCAL" />
       <updated>1456809536262</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="创建商品页面样式修改；&#10;增加表单验证；&#10;增加商品缩略图预览；&#10;页面跳转时导航栏选中项相应改变；">
+      <created>1456822269149</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1456822269149</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3472222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20277777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.50292826" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6671018" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66579634" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -445,13 +397,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/ThinkPHP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -753,53 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3571428">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.857142">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/createProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26798308">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#p#3;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Base/common.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.142858">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.857142">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -841,6 +743,54 @@
         <state vertical-scroll-proportion="0.42877293">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.75">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3571428">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.857142">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Resources/Images2016-03-01/56d558abeaa06.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/queryProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.178572">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/createProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3568406">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#p#3;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#block#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

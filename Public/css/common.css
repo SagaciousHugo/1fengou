@@ -1,13 +1,15 @@
 body {
     background-color: #CCC;
-    padding: 50px;
+    padding: 80px;
     font-family: "Microsoft YaHei UI";
 }
 img {float:left}
-/*div.info {
-    float: left;
-}*/
 footer{
-    text-align:center;
-    height: 60px;         /* footer的高度一定要是固定值*/
+    position: relative;
+    position:relative;
+    margin:auto;
+    left:0;
+    right:0;
+    width:200px;
+    height:150px
 }

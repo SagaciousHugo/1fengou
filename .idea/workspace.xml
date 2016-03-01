@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9173cec-c4ea-4041-b597-64e1c908d58b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/createProduct.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/createProduct.html" />
     </list>
     <ignored path="thinkphp3.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -388,7 +389,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456807922396</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="prepare to push to origin/dev">
+      <created>1456808375774</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1456808375774</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -431,7 +438,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/SagaciousHugo/1fengou into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Application/Home/View/Index/createProduct.html&#10;" />
     <MESSAGE value="验证冲突" />
     <MESSAGE value="Merge branch 'dev'&#10;&#10;# Conflicts:&#10;#&#9;Application/Home/View/Index/createProduct.html&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dev'&#10;&#10;# Conflicts:&#10;#&#9;Application/Home/View/Index/createProduct.html&#10;" />
+    <MESSAGE value="prepare to push to origin/dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepare to push to origin/dev" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -36,7 +36,7 @@
                 <li id="main"class="active"><a href="http://localhost/1fengou/index.php/home/Index/queryProduct"><span><i class="fa fa-home"></i> 首页</span></a></span></li>
                 <li id="shopping"><a href="#"><span><i class="fa fa-bank"></i> 购物车</span></a></li>
                 <li id="create_product"><a href="http://localhost/1fengou/index.php/home/Index/createProduct"><span><i class="fa fa-gears"></i> 创建商品</span></a></li>
-                <li id="create_product"><a href="http://localhost/1fengou/index.php/home/Manage/queryProduct"><span><i class="fa fa-gears"></i> 管理商品</span></a></li>
+                <li id="create_product"><a href="http://localhost/1fengou/index.php/home/Index/queryManageProduct"><span><i class="fa fa-gears"></i> 管理商品</span></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-table"></i> 商品分类</span></a>
                     <ul class="dropdown-menu">
@@ -66,7 +66,7 @@
     <div class="container-fluid">
         <div class='row-fluid'>
             <div class='col-md-8'>
-                <h2>每日精选</h2>
+                <h2>商品列表</h2>
                 <div name="product_detail">
                     <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img width="150" height="150" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
                         <div class="info">
@@ -75,8 +75,8 @@
                             <p><span><i class="fa fa-file-text"></i> 简介</span>：<?php echo ($vo['introduce']); ?></p>
                             <p><span><i class="fa fa-thumbs-o-up"></i> 已售</span>：<?php echo ($vo['sales']); ?></p>
                             <a href="#" class="btn btn-info btn-lg active" role="button">查看详情</a>
-                            <a href="#" class="btn btn-danger btn-lg active" role="button">立即购买</a>
-                            <a href="#" class="btn btn-success btn-lg active" role="button">加入购物车</a>
+                            <a href="#" class="btn btn-danger btn-lg active" role="button">修改商品</a>
+                            <a href="#" class="btn btn-success btn-lg active" role="button">删除商品</a>
                         </div>
                         <br/><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>

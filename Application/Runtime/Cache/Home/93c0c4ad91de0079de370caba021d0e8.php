@@ -13,58 +13,6 @@
 
 
 
-    <script type="text/javascript">
-        /*alert('jQuery版本：' + $.fn.jquery);*/
-        $(function() {
-            /*
-            表单验证初始化
-             */
-            $("#commentForm").validate();
-
-            /*
-            使用H5的API进行商品缩略图读取和预览
-             */
-            var
-                    fileInput = document.getElementById('test-image-file'),
-                    info = document.getElementById('test-file-info'),
-                    preview = document.getElementById('test-image-preview');
-            // 监听change事件:
-            fileInput.addEventListener('change', function () {
-                // 清除背景图片:
-                preview.style.backgroundImage = '';
-                // 检查文件是否选择:
-                if (!fileInput.value) {
-                    info.innerHTML = '没有选择文件';
-                    return;
-                }
-                // 获取File引用:
-                var file = fileInput.files[0];
-                // 获取File信息:
-                info.innerHTML = '缩略图信息' + '<br>' + '文件: ' + file.name + '<br>' +
-                        '大小: ' + file.size + '<br>' +
-                        '修改: ' + file.lastModifiedDate;
-                if (file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/gif') {
-                    alert('不是有效的图片文件!');
-                    return;
-                }
-                // 读取文件:
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    var data = e.target.result; // 'data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...'
-                    preview.style.backgroundImage = "url(" + data + ")";
-                };
-                // 以DataURL的形式读取文件:
-                reader.readAsDataURL(file);
-            });
-
-            /*
-            导航栏跳转时改变“active”的选项
-             */
-            $("ul.navbar-nav li").removeClass();
-            $("#create_product").addClass("active");
-        });
-    </script>
-
 
 </head>
 
@@ -115,22 +63,43 @@
 </nav>
 
 
-    <div>
-        <form id="commentForm" action="/1fengou/index.php/Home/Index/addProduct" enctype="multipart/form-data" method="post" >
+    <script>
+        function deleteProduct(){
+            var result = confirm("确定要删除该商品全部信息吗？");
+            if(result==false){
+                window.event.returnValue = false;
+            }
 
-                <p>品id123:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="shangpinid" name="id" minlength="2" type="text" required/>必填项</p>
-                <p>商品名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" name="name" minlength="3" type="text" required/>必填项</p>
-                <p>商品价格:￥ <input id="price" type="number" name="price" required/>必填项</p>
-                <p>商品简介:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="des" maxlength="30" type="text" name="introduce" style="resize:none;"></textarea></p>
-                <p>商品缩略图：<input type="file" id="test-image-file" name="photo" class="btn btn-info btn-lg active" /></p>
-                <p>缩略图预览</p>
-                <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
+        }
+    </script>
+    <div class="container-fluid">
+        <div class='row-fluid'>
+            <div class='col-md-8'>
+                <h2>商品列表</h2>
+                <div name="product_detail">
+                    <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img width="150" height="150" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
+                        <div class="info">
+                            <h3><?php echo ($vo['name']); ?></h3>
+                            <p><span><i class="fa fa-cny"></i> 价格</span>：<?php echo ($vo['price']); ?></p>
+                            <p><span><i class="fa fa-file-text"></i> 简介</span>：<?php echo ($vo['introduce']); ?></p>
+                            <p><span><i class="fa fa-thumbs-o-up"></i> 已售</span>：<?php echo ($vo['sales']); ?></p>
+                            <a href="#" class="btn btn-info btn-lg active" role="button">查看详情</a>
+                            <a href="http://localhost/1fengou/index.php/home/Manage/modifyProductStep_1?id=<?php echo ($vo['id']); ?>" class="btn btn-danger btn-lg active" role="button">修改商品</a>
+                            <a href="http://localhost/1fengou/index.php/home/Manage/deleteProduct?id=<?php echo ($vo['id']); ?>" onclick="deleteProduct()" class="btn btn-success btn-lg active" role="button">删除商品</a>
+                        </div>
+                        <br/><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
-                <div id="test-file-info">
-                </div>
-            <input type="submit" value="提交" class="btn btn-success btn-lg active">
-        </form>
+            </div>
 
+            <div class='col-md-4'>
+                <h2><span><i class="fa fa-thumbs-o-up"></i> 相关推荐</span></h2>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li><a href='#'>Another Link 1</a></li>
+                    <li><a href='#'>Another Link 2</a></li>
+                    <li><a href='#'>Another Link 3</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 

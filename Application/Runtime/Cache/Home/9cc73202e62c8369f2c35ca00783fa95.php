@@ -116,12 +116,12 @@
 
 
     <div>
-        <form id="commentForm" action="/1fengou/index.php/Home/Index/addProduct" enctype="multipart/form-data" method="post" >
-
-                <p>品id123:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="shangpinid" name="id" minlength="2" type="text" required/>必填项</p>
-                <p>商品名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" name="name" minlength="3" type="text" required/>必填项</p>
-                <p>商品价格:￥ <input id="price" type="number" name="price" required/>必填项</p>
-                <p>商品简介:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="des" maxlength="30" type="text" name="introduce" style="resize:none;"></textarea></p>
+        <form id="commentForm" action="/1fengou/index.php/Home/Manage/modifyProductStep_2" enctype="multipart/form-data" method="post" >
+            /1fengou/Public
+                <p>商品id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="shangpinid" name="id" minlength="2" type="text" value="<?php echo ($productList[0]['id']); ?>"  readonly="true" /></p>
+                <p>商品名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" name="name" minlength="3" type="text"  value="<?php echo ($productList[0]['name']); ?>"   required/>必填项</p>
+                <p>商品价格:￥ <input id="price" type="number" name="price"  value="<?php echo ($productList[0]['price']); ?>"   required/>必填项</p>
+                <p>商品简介:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="des" maxlength="30" type="text" name="introduce"  style="resize:none;"><?php echo ($productList[0]['introduce']); ?></textarea></p>
                 <p>商品缩略图：<input type="file" id="test-image-file" name="photo" class="btn btn-info btn-lg active" /></p>
                 <p>缩略图预览</p>
                 <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">

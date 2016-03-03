@@ -4,11 +4,10 @@
     <script type="text/javascript">
         /*alert('jQuery版本：' + $.fn.jquery);*/
         $(function() {
-            alert("hello");
             /*
             表单验证初始化
              */
-            /*$("#commentForm").validate();*/
+            $("#commentForm").validate();
 
             /*
             使用H5的API进行商品缩略图读取和预览
@@ -17,7 +16,6 @@
                     fileInput = document.getElementById('test-image-file'),
                     info = document.getElementById('test-file-info'),
                     preview = document.getElementById('test-image-preview');
-
             // 监听change事件:
             fileInput.addEventListener('change', function () {
                 // 清除背景图片:

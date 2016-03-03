@@ -5,12 +5,12 @@
         /*alert('jQuery版本：' + $.fn.jquery);*/
         $(function() {
             /*
-            表单验证初始化
+             表单验证初始化
              */
             $("#commentForm").validate();
 
             /*
-            使用H5的API进行商品缩略图读取和预览
+             使用H5的API进行商品缩略图读取和预览
              */
             var
                     fileInput = document.getElementById('test-image-file'),
@@ -64,22 +64,21 @@
             <div class="row">
                 <section class="col-lg-12 connectedSortable">
                     <div>
-                        <form id="commentForm" action="__URL__/addProduct" enctype="multipart/form-data" method="post" >
+                        <form id="commentForm" action="__URL__/saveProduct" enctype="multipart/form-data" method="post" >
                             <div class="form-group">
-                                <label for="shangpinid">商品id(必填项)</label>
-                                <input id="shangpinid" name="id" minlength="2" type="text" class="form-control" required/>
+                                <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="{$productList['id']}" style="display:none"/>
                             </div>
                             <div>
                                 <label for="name">商品名(必填项)</label>
-                                <input id="name" name="name" minlength="3" type="text" class="form-control" required/>
+                                <input id="name" name="name" minlength="3" type="text" class="form-control" value="{$productList['name']}" required/>
                             </div>
                             <div>
                                 <label for="price">商品价格￥(必填项)</label>
-                                <input id="price" type="number" name="price" class="form-control" required/>
+                                <input id="price" type="number" name="price" class="form-control" value="{$productList['price']}" required/>
                             </div>
                             <div>
                                 <label for="des">商品简介</label>
-                                <textarea id="des" maxlength="30" type="text" name="introduce" style="resize:none;" class="form-control"></textarea>
+                                <textarea id="des" maxlength="30" type="text" name="introduce" style="resize:none;" class="form-control">{$productList['introduce']}</textarea>
                             </div>
                             <div>
                                 <label for="des">商品缩略图(预览)</label>

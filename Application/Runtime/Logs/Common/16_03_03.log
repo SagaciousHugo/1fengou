@@ -4,3 +4,135 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001559s ]
 ERR: 无法加载模块:Application
 
+[ 2016-03-03T16:33:22+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:33:22+08:00 ] ::1 /1fengou/Application/Home/View/Index/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001582s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:33:22+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:33:22+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:34:45+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:34:45+08:00 ] ::1 /1fengou/Application/Home/View/Index/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001835s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:34:45+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:34:45+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:35:59+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001663s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:36:00+08:00 ] ::1 /1fengou/Application/Home/View/Index/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:36:00+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001478s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:36:00+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001449s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:38:46+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001521s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:38:46+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:38:46+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:42:40+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001417s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:42:40+08:00 ] ::1 /1fengou/Application/Home/View/Index/plugins/jQuery/jQuery-2.1.4.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001577s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:42:40+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002475s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:42:40+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:43:00+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:43:00+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-03T16:43:00+08:00 ] ::1 /1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+ERR: 无法加载模块:Application
+

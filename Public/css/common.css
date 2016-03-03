@@ -1,15 +1,9 @@
 body {
     background-color: #CCC;
-    padding: 80px;
+
+    font-family: "Microsoft YaHei UI";
+}
+h1,h2,h3 {
     font-family: "Microsoft YaHei UI";
 }
 img {float:left}
-footer{
-    position: relative;
-    position:relative;
-    margin:auto;
-    left:0;
-    right:0;
-    width:200px;
-    height:150px
-}

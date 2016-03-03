@@ -2,9 +2,9 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    public function index(){
+/*    public function index(){
         $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
-    }
+    }*/
     public function showImage(){
     $size = getimagesize('./1.jpg'); //获取mime信息
     $fp=fopen('./1.jpg', "rb"); //二进制方式打开文件
@@ -13,11 +13,17 @@ class IndexController extends Controller {
     exit;
     }
 
-    public function queryProduct(){
+    public function index($page){
         $User = D('Product');
         $data = $User->select();
         $this->assign('productList',$data);
-        $this->display();
+        if($page == "index") {
+            $this->display('Index:index');
+        } elseif ($page == "manage"){
+            $this->display('Index:manageProduct');
+        } else {
+
+        }
     }
 
     public function createProduct(){
@@ -46,7 +52,8 @@ class IndexController extends Controller {
             $data['sales'] = '0';
             $User = D('Product');
             if($User->add($data)){
-                echo "商品信息创建成功！";
+                /*echo "商品信息创建成功！";*/
+                $this->success('新增商品成功！','http://localhost/1fengou_demo/index.php/home/Index/index');
             } else {
                 $this->error('商品信息创建失败！');
             }

@@ -1,0 +1,91 @@
+<extend name="Base/common"/>
+
+<block name="mainContent">
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>
+                管理商品
+                <small>商品详情</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-gears"></i> 管理商品</a></li>
+                <li class="active">商品详情</li>
+            </ol>
+        </section>
+
+        <section class="content">
+            <div class="row">
+                <section class="col-lg-12 col-xs-12">
+                    <div>
+
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title">商品详情列表</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>商品Id</th>
+                                        <th>商品名称</th>
+                                        <th>商品价格(￥)</th>
+                                        <th>商品简介</th>
+                                        <th>已售数量</th>
+                                        <th>商品缩略图</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <volist name="productList" id="vo">
+                                            <tr>
+                                                <td>
+                                                    {$vo['id']}
+                                                </td>
+                                                <td>
+                                                    {$vo['name']}
+                                                </td>
+                                                <td>
+                                                    {$vo['price']}
+                                                </td>
+                                                <td>
+                                                    {$vo['introduce']}
+                                                </td>
+                                                <td>
+                                                    {$vo['sales']}
+                                                </td>
+                                                <td>
+                                                    <img width="150" height="150" src="__PUBLIC__/{$vo['thumbnail']}" alt="商品缩略图"/>
+                                                </td>
+                                                <td>
+                                                    <a class=".btn.btn-app" href="">
+                                                        <i class="fa fa-edit"></i> 修改
+                                                    </a>
+                                                    <a class=".btn.btn-app" href="#">
+                                                        <i class="fa fa-remove"></i> 删除
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </volist>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>商品Id</th>
+                                        <th>商品名称</th>
+                                        <th>商品价格(￥)</th>
+                                        <th>商品简介</th>
+                                        <th>已售数量</th>
+                                        <th>商品缩略图</th>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</block>

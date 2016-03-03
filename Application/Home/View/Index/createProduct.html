@@ -1,13 +1,14 @@
 <extend name="Base/common"/>
 
-<block name="script">
+<block name="defineScript">
     <script type="text/javascript">
         /*alert('jQuery版本：' + $.fn.jquery);*/
         $(function() {
+            alert("hello");
             /*
             表单验证初始化
              */
-            $("#commentForm").validate();
+            /*$("#commentForm").validate();*/
 
             /*
             使用H5的API进行商品缩略图读取和预览
@@ -16,6 +17,7 @@
                     fileInput = document.getElementById('test-image-file'),
                     info = document.getElementById('test-file-info'),
                     preview = document.getElementById('test-image-preview');
+
             // 监听change事件:
             fileInput.addEventListener('change', function () {
                 // 清除背景图片:
@@ -44,34 +46,59 @@
                 // 以DataURL的形式读取文件:
                 reader.readAsDataURL(file);
             });
-
-            /*
-            导航栏跳转时改变“active”的选项
-             */
-            $("ul.navbar-nav li").removeClass();
-            $("#create_product").addClass("active");
         });
     </script>
 </block>
 
-<block name="title"><title>1fengou</title></block>
 
-<block name="main">
-    <div>
-        <form id="commentForm" action="__URL__/addProduct" enctype="multipart/form-data" method="post" >
+<block name="mainContent">
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>
+                新建商品
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-gears"></i> 新建商品</a></li>
+            </ol>
+        </section>
 
-                <p>商品id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="shangpinid" name="id" minlength="2" type="text" required/>必填项</p>
-                <p>商品名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" name="name" minlength="3" type="text" required/>必填项</p>
-                <p>商品价格:￥ <input id="price" type="number" name="price" required/>必填项</p>
-                <p>商品简介:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="des" maxlength="30" type="text" name="introduce" style="resize:none;"></textarea></p>
-                <p>商品缩略图：<input type="file" id="test-image-file" name="photo" class="btn btn-info btn-lg active" /></p>
-                <p>缩略图预览</p>
-                <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
-                </div>
-                <div id="test-file-info">
-                </div>
-            <input type="submit" value="提交" class="btn btn-success btn-lg active">
-        </form>
-
+        <section class="content">
+            <div class="row">
+                <section class="col-lg-12 connectedSortable">
+                    <div>
+                        <form id="commentForm" action="__URL__/addProduct" enctype="multipart/form-data" method="post" >
+                            <div class="form-group">
+                                <label for="shangpinid">商品id(必填项)</label>
+                                <input id="shangpinid" name="id" minlength="2" type="text" class="form-control" required/>
+                            </div>
+                            <div>
+                                <label for="name">商品名(必填项)</label>
+                                <input id="name" name="name" minlength="3" type="text" class="form-control" required/>
+                            </div>
+                            <div>
+                                <label for="price">商品价格￥(必填项)</label>
+                                <input id="price" type="number" name="price" class="form-control" required/>
+                            </div>
+                            <div>
+                                <label for="des">商品简介</label>
+                                <textarea id="des" maxlength="30" type="text" name="introduce" style="resize:none;" class="form-control"></textarea>
+                            </div>
+                            <div>
+                                <label for="des">商品缩略图(预览)</label>
+                            </div>
+                            <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
+                            </div>
+                            <div>
+                                <input type="file" id="test-image-file" name="photo" class="btn btn-info btn-lg active" />
+                            </div>
+                            <div id="test-file-info">
+                            </div>
+                            <!--<input type="submit" value="提交" class="btn btn-success btn-lg active">-->
+                            <button type="submit" class="btn btn-default">提交</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
     </div>
 </block>

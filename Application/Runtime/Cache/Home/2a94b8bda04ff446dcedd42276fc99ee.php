@@ -7,7 +7,7 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.5 -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/bootstrap/css/bootstrap.min.css">
 
         <!--  &lt;!&ndash; Font Awesome &ndash;&gt;
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
@@ -16,24 +16,24 @@
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Theme style -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/dist/css/AdminLTE.min.css">
         <!-- AdminLTE Skins. Choose a skin from the css/skins
              folder instead of downloading all of them to reduce the load. -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/dist/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/dist/css/skins/_all-skins.min.css">
         <!-- iCheck -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/plugins/iCheck/flat/blue.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/plugins/iCheck/flat/blue.css">
         <!-- Morris chart -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/plugins/morris/morris.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/plugins/morris/morris.css">
         <!-- jvectormap -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
         <!-- Date Picker -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/plugins/datepicker/datepicker3.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/plugins/datepicker/datepicker3.css">
         <!-- Daterange picker -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/plugins/daterangepicker/daterangepicker-bs3.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/plugins/daterangepicker/daterangepicker-bs3.css">
         <!-- bootstrap wysihtml5 - text editor -->
-        <link rel="stylesheet" href="/1fengou_demo/Application/Home/View/Index/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+        <link rel="stylesheet" href="/1fengou/Application/Home/View/Index/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
         <!-- common css -->
-        <link rel="stylesheet" type="text/css" href="/1fengou_demo/Public/css/common.css">
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -80,7 +80,7 @@
                                 <li><!-- start message -->
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                            <img src="/1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                                         </div>
                                         <h4>
                                             Support Team
@@ -93,7 +93,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                                            <img src="/1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                                         </div>
                                         <h4>
                                             AdminLTE Design Team
@@ -105,7 +105,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                                            <img src="/1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                                         </div>
                                         <h4>
                                             Developers
@@ -117,7 +117,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                                            <img src="/1fengou/Application/Home/View/Index/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                                         </div>
                                         <h4>
                                             Sales Department
@@ -129,7 +129,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                                            <img src="/1fengou/Application/Home/View/Index/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                                         </div>
                                         <h4>
                                             Reviewers
@@ -262,13 +262,13 @@
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                        <img src="/1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                         <span class="hidden-xs">Alexander Pierce</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="/1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                             <p>
                                 Alexander Pierce - Web Developer
@@ -317,7 +317,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="/1fengou_demo/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="/1fengou/Application/Home/View/Index/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Alexander Pierce</p>
@@ -343,19 +343,19 @@
                     <i class="fa fa-dashboard"></i> <span>商城首页</span> <i class="fa fa-home pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="http://localhost/1fengou_demo/index.php/home/Index/index/page/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
+                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index/page/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> 每日精选</a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="http://localhost/1fengou_demo/index.php/home/Index/createProduct">
+                <a href="http://localhost/1fengou/index.php/home/Index/createProduct">
                     <i class="fa fa-files-o"></i>
                     <span>新建商品</span>
                     <span class="label label-primary pull-right">6</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou_demo/index.php/home/Index/index/page/manage">
+                <a href="http://localhost/1fengou/index.php/home/Index/index/page/manage">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -522,7 +522,7 @@
             <h2>1分抢购中... ...整点秒杀</h2>
             <div name="product_detail">
               <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="info">
-                  <img width="150" height="150" src="/1fengou_demo/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
+                  <img width="150" height="150" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
                   <h3><?php echo ($vo['name']); ?></h3>
                   <p><span><i class="fa fa-cny"></i> 价格</span>：<?php echo ($vo['price']); ?></p>
                   <p><span><i class="fa fa-file-text"></i> 简介</span>：<?php echo ($vo['introduce']); ?></p>
@@ -881,7 +881,7 @@
 
         <!--<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
         <!-- jQuery 2.1.4 -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/jQuery/jQuery-2.1.4.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -889,33 +889,33 @@
             $.widget.bridge('uibutton', $.ui.button);
         </script>
         <!-- Bootstrap 3.3.5 -->
-        <script src="/1fengou_demo/Application/Home/View/Index/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/bootstrap/js/bootstrap.min.js"></script>
         <!-- Morris.js charts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/morris/morris.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/morris/morris.min.js"></script>
         <!-- Sparkline -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/sparkline/jquery.sparkline.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/sparkline/jquery.sparkline.min.js"></script>
         <!-- jvectormap -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
         <!-- jQuery Knob Chart -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/knob/jquery.knob.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/knob/jquery.knob.js"></script>
         <!-- daterangepicker -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/daterangepicker/daterangepicker.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/daterangepicker/daterangepicker.js"></script>
         <!-- datepicker -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/datepicker/bootstrap-datepicker.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/datepicker/bootstrap-datepicker.js"></script>
         <!-- Bootstrap WYSIHTML5 -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
         <!-- Slimscroll -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/slimScroll/jquery.slimscroll.min.js"></script>
         <!-- FastClick -->
-        <script src="/1fengou_demo/Application/Home/View/Index/plugins/fastclick/fastclick.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/plugins/fastclick/fastclick.js"></script>
         <!-- AdminLTE App -->
-        <script src="/1fengou_demo/Application/Home/View/Index/dist/js/app.min.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/dist/js/app.min.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="/1fengou_demo/Application/Home/View/Index/dist/js/pages/dashboard.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/dist/js/pages/dashboard.js"></script>
         <!-- AdminLTE for demo purposes -->
-        <script src="/1fengou_demo/Application/Home/View/Index/dist/js/demo.js"></script>
+        <script src="/1fengou/Application/Home/View/Index/dist/js/demo.js"></script>
     </body>
 </html>

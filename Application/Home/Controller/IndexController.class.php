@@ -13,16 +13,51 @@ class IndexController extends Controller {
     exit;
     }
 
-    public function index($page){
-        $User = D('Product');
-        $data = $User->select();
-        $this->assign('productList',$data);
-        if($page == "index") {
+    public function index($type,$page=null,$pageCount=10){
+        $ManageProduct = new \Home\Event\ManageProductEvent();
+        $this->assign('productList',$ManageProduct->queryProductByPage($page));
+        if($type == "index") {
             $this->display('Index:index');
-        } elseif ($page == "manage"){
+        } elseif ($type == "manage"){
             $this->display('Index:manageProduct');
         } else {
 
+        }
+    }
+
+    public function editProduct(){
+        if(I('id') == null){
+            //新增商品
+            $this->display('Index:editProduct');
+        }else{
+            //更新商品
+            $ManageProduct = new \Home\Event\ManageProductEvent();
+            $this->assign('productList',$ManageProduct->queryProductById(I('id')));
+            $this->display('Index:editProduct');
+        }
+    }
+
+    public function queryProduct($page=1){
+        $ManageProduct = new \Home\Event\ManageProductEvent();
+        $this->assign('productList',$ManageProduct->queryProductByPage($page));
+        $this->display('Index:index');
+    }
+
+    public function manageProduct($page=1){
+        $ManageProduct = new \Home\Event\ManageProductEvent();
+        $this->assign('productList',$ManageProduct->queryProductByPage($page));
+        $this->display('Index:manageProduct');
+    }
+
+
+
+    public function deleteProduct(){
+        $ManageProduct = new \Home\Event\ManageProductEvent();
+        $result = $ManageProduct->deleteProduct(I('id'));
+        if($result!=false){
+            $this->success('商品删除成功！');
+        }else{
+            $this->error($ManageProduct->getError());
         }
     }
 

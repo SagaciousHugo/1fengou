@@ -18,7 +18,7 @@ class IndexController extends Controller {
         $this->assign('productList',$ManageProduct->queryProductByPage($page));
         if($type == "index") {
             $this->display('Index:index');
-        } elseif ($page == "manage"){
+        } elseif ($type == "manage"){
             $this->display('Index:manageProduct');
         } else {
 

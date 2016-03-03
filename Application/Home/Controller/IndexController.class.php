@@ -18,7 +18,7 @@ class IndexController extends Controller {
         $this->assign('productList',$ManageProduct->queryProductByPage($page));
         if($type == "index") {
             $this->display('Index:index');
-        } elseif ($type == "manage"){
+        } elseif ($page == "manage"){
             $this->display('Index:manageProduct');
         } else {
 
@@ -65,8 +65,11 @@ class IndexController extends Controller {
                 $params['thumbnail'] = "Resources/Images".$file['savepath'].$file['savename'];
                 $ManageProduct = new \Home\Event\ManageProductEvent();
                 $result = $ManageProduct->saveProduct($params);
-                $this->success('已成功创建id'.$result.'商品！');
-
+                if($result!=false){
+                    $this->success('已成功创建id'.$result.'商品！');
+                }else{
+                    $this->error($result);
+                }
             }
 
 

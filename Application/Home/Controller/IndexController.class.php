@@ -13,24 +13,42 @@ class IndexController extends Controller {
     exit;
     }*/
 
-    public function index($page){
-        $User = D('Product');
-        $data = $User->select();
-        $this->assign('productList',$data);
-        if($page == "index") {
+    public function index($type,$page=null,$pageCount=10){
+        $ManageProduct = new \Home\Event\ManageProductEvent();
+        $this->assign('productList',$ManageProduct->queryProductByPage($page));
+        if($type == "index") {
             $this->display('Index:index');
-        } elseif ($page == "manage"){
+        } elseif ($type == "manage"){
             $this->display('Index:manageProduct');
         } else {
 
         }
     }
 
-    public function createProduct(){
-        $this->display();
+    public function editProduct(){
+        if(I('id') == null){
+            //新增商品
+            $this->display('Index:editProduct');
+        }else{
+            //更新商品
+            $ManageProduct = new \Home\Event\ManageProductEvent();
+            $data = $ManageProduct->queryProductById(I('id'));
+            $this->assign('productList', $data);
+            $this->display('Index:editProduct');
+        }
     }
 
-    public function addProduct(){
+    public function deleteProduct(){
+        $ManageProduct = new \Home\Event\ManageProductEvent();
+        $result = $ManageProduct->deleteProduct(I('id'));
+        if($result == true){
+            $this->success('商品删除成功！');
+        }else{
+            $this->error($result);
+        }
+    }
+
+    public function saveProduct(){
         header("Content-Type:text/html;charset=utf-8");
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -43,20 +61,19 @@ class IndexController extends Controller {
             $this->error($upload->getError());
         }else{// 上传成功 获取上传文件信息
             foreach($info as $file){
-                $data['thumbnail'] = "Resources/Images".$file['savepath'].$file['savename'];
+                $params = I('post.');
+                $params['thumbnail'] = "Resources/Images".$file['savepath'].$file['savename'];
+                $ManageProduct = new \Home\Event\ManageProductEvent();
+                $result = $ManageProduct->saveProduct($params);
+                if($result!=false){
+                    $this->success('已成功创建id'.$result.'商品！');
+                }else{
+                    $this->error($result);
+                }
             }
-            $data['id'] = $_POST['id'];
-            $data['name'] = $_POST['name'];
-            $data['price'] = $_POST['price'];
-            $data['introduce'] = $_POST['introduce'];
-            $data['sales'] = '0';
-            $User = D('Product');
-            if($User->add($data)){
-                /*echo "商品信息创建成功！";*/
-                $this->success('新增商品成功！','http://localhost/1fengou_demo/index.php/home/Index/index');
-            } else {
-                $this->error('商品信息创建失败！');
-            }
+
+
         }
     }
+
 }

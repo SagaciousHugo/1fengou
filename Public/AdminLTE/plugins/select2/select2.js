@@ -1448,7 +1448,7 @@ S2.define('select2/selection/single',[
     this.$selection.attr('aria-labelledby', id);
 
     this.$selection.on('mousedown', function (evt) {
-      // Only respond to left clicks
+      // Only respond-1.4.2 to left clicks
       if (evt.which !== 1) {
         return;
       }

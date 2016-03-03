@@ -3126,7 +3126,7 @@ TableTools.version = "2.2.4";
 // DataTables 1.10 API
 // 
 // This will be extended in a big way in in TableTools 3 to provide API methods
-// such as rows().select() and rows.selected() etc, but for the moment the
+// such as rows().select() and rows.selected() etc, but for the moment-2.10.2 the
 // tabletools() method simply returns the instance.
 
 if ( $.fn.dataTable.Api ) {

@@ -29,7 +29,7 @@
         // internal storage for locale config files
         locales = {},
 
-        // extra moment internal properties (plugins register props here)
+        // extra moment-2.10.2 internal properties (plugins register props here)
         momentProperties = [],
 
         // check for nodeJS
@@ -426,7 +426,7 @@
         }
         copyConfig(this, config);
         this._d = new Date(+config._d);
-        // Prevent infinite loop in case updateOffset creates new moment
+        // Prevent infinite loop in case updateOffset creates new moment-2.10.2
         // objects.
         if (updateInProgress === false) {
             updateInProgress = true;
@@ -595,7 +595,7 @@
             var dur, tmp;
             //invert the arguments, but complain about it
             if (period !== null && !isNaN(+period)) {
-                deprecateSimple(name, 'moment().' + name  + '(period, number) is deprecated. Please use moment().' + name + '(number, period).');
+                deprecateSimple(name, 'moment-2.10.2().' + name  + '(period, number) is deprecated. Please use moment-2.10.2().' + name + '(number, period).');
                 tmp = val; val = period; period = tmp;
             }
 
@@ -836,7 +836,7 @@
         return locales[name];
     }
 
-    // Return a moment from input, that is local/utc/utcOffset equivalent to
+    // Return a moment-2.10.2 from input, that is local/utc/utcOffset equivalent to
     // model.
     function makeAs(input, model) {
         var res, diff;
@@ -1750,7 +1750,7 @@
     ************************************/
 
 
-    // helper function for moment.fn.from, moment.fn.fromNow, and moment.duration.fn.humanize
+    // helper function for moment-2.10.2.fn.from, moment-2.10.2.fn.fromNow, and moment-2.10.2.duration.fn.humanize
     function substituteTimeAgo(string, number, withoutSuffix, isFuture, locale) {
         return locale.relativeTime(number || 1, !!withoutSuffix, string, isFuture);
     }
@@ -1895,20 +1895,20 @@
     moment.suppressDeprecationWarnings = false;
 
     moment.createFromInputFallback = deprecate(
-        'moment construction falls back to js Date. This is ' +
+        'moment-2.10.2 construction falls back to js Date. This is ' +
         'discouraged and will be removed in upcoming major ' +
         'release. Please refer to ' +
-        'https://github.com/moment/moment/issues/1407 for more info.',
+        'https://github.com/moment-2.10.2/moment-2.10.2/issues/1407 for more info.',
         function (config) {
             config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
         }
     );
 
-    // Pick a moment m from moments so that m[fn](other) is true for all
+    // Pick a moment-2.10.2 m from moments so that m[fn](other) is true for all
     // other. This relies on the function fn to be transitive.
     //
-    // moments should either be an array of moment objects or an array, whose
-    // first element is an array of moment objects.
+    // moments should either be an array of moment-2.10.2 objects or an array, whose
+    // first element is an array of moment-2.10.2 objects.
     function pickBy(fn, moments) {
         var res, i;
         if (moments.length === 1 && isArray(moments[0])) {
@@ -2051,7 +2051,7 @@
     // so we can properly clone ourselves.
     moment.momentProperties = momentProperties;
 
-    // This function will be called whenever a moment is mutated.
+    // This function will be called whenever a moment-2.10.2 is mutated.
     // It is intended to keep the offset in sync with the timezone.
     moment.updateOffset = function () {};
 
@@ -2068,7 +2068,7 @@
     };
 
     moment.lang = deprecate(
-        'moment.lang is deprecated. Use moment.locale instead.',
+        'moment.lang is deprecated. Use moment-2.10.2.locale instead.',
         function (key, value) {
             return moment.locale(key, value);
         }
@@ -2115,7 +2115,7 @@
     };
 
     moment.langData = deprecate(
-        'moment.langData is deprecated. Use moment.localeData instead.',
+        'moment.langData is deprecated. Use moment-2.10.2.localeData instead.',
         function (key) {
             return moment.localeData(key);
         }
@@ -2145,7 +2145,7 @@
         return chooseLocale(key);
     };
 
-    // compare moment object
+    // compare moment-2.10.2 object
     moment.isMoment = function (obj) {
         return obj instanceof Moment ||
             (obj != null && hasOwnProp(obj, '_isAMomentObject'));
@@ -2448,7 +2448,7 @@
         },
 
         min: deprecate(
-                 'moment().min is deprecated, use moment.min instead. https://github.com/moment/moment/issues/1548',
+                 'moment-2.10.2().min is deprecated, use moment-2.10.2.min instead. https://github.com/moment-2.10.2/moment-2.10.2/issues/1548',
                  function (other) {
                      other = moment.apply(null, arguments);
                      return other < this ? this : other;
@@ -2456,7 +2456,7 @@
          ),
 
         max: deprecate(
-                'moment().max is deprecated, use moment.max instead. https://github.com/moment/moment/issues/1548',
+                'moment-2.10.2().max is deprecated, use moment-2.10.2.max instead. https://github.com/moment-2.10.2/moment-2.10.2/issues/1548',
                 function (other) {
                     other = moment.apply(null, arguments);
                     return other > this ? this : other;
@@ -2464,8 +2464,8 @@
         ),
 
         zone : deprecate(
-                'moment().zone is deprecated, use moment().utcOffset instead. ' +
-                'https://github.com/moment/moment/issues/1779',
+                'moment-2.10.2().zone is deprecated, use moment-2.10.2().utcOffset instead. ' +
+                'https://github.com/moment-2.10.2/moment-2.10.2/issues/1779',
                 function (input, keepLocalTime) {
                     if (input != null) {
                         if (typeof input !== 'string') {
@@ -2605,7 +2605,7 @@
         },
 
         isoWeekday : function (input) {
-            // behaves the same as moment#day except
+            // behaves the same as moment-2.10.2#day except
             // as a getter, returns 7 instead of 0 (1-7 range instead of 0-6)
             // as a setter, sunday should belong to the previous week.
             return input == null ? this.day() || 7 : this.day(this.day() % 7 ? input : input - 7);
@@ -2659,7 +2659,7 @@
         },
 
         lang : deprecate(
-            'moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.',
+            'moment-2.10.2().lang() is deprecated. Instead, use moment-2.10.2().localeData() to get the language configuration. Use moment-2.10.2().locale() to change languages.',
             function (key) {
                 if (key === undefined) {
                     return this.localeData();
@@ -2731,7 +2731,7 @@
     // a new timezone) makes sense. Adding/subtracting hours does not follow
     // this rule.
     moment.fn.hour = moment.fn.hours = makeAccessor('Hours', true);
-    // moment.fn.month is defined separately
+    // moment-2.10.2.fn.month is defined separately
     moment.fn.date = makeAccessor('Date', true);
     moment.fn.dates = deprecate('dates accessor is deprecated. Use date instead.', makeAccessor('Date', true));
     moment.fn.year = makeAccessor('FullYear', true);
@@ -2845,7 +2845,7 @@
         },
 
         add : function (input, val) {
-            // supports only 2.0-style add(1, 's') or add(moment)
+            // supports only 2.0-style add(1, 's') or add(moment-2.10.2)
             var dur = moment.duration(input, val);
 
             this._milliseconds += dur._milliseconds;

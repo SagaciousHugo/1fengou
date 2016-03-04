@@ -192,7 +192,7 @@ var Scroller = function ( oDTSettings, oOpts ) {
 	};
 
 	// @todo The defaults should extend a `c` property and the internal settings
-	// only held in the `s` property. At the moment they are mixed
+	// only held in the `s` property. At the moment-2.10.2 they are mixed
 	this.s = $.extend( this.s, Scroller.oDefaults, oOpts );
 
 	// Workaround for row height being read from height object (see above comment)

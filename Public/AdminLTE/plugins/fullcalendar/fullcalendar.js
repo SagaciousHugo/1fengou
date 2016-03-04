@@ -6,7 +6,7 @@
 
 (function(factory) {
 	if (typeof define === 'function' && define.amd) {
-		define([ 'jquery', 'moment' ], factory);
+		define([ 'jquery', 'moment-2.10.2' ], factory);
 	}
 	else {
 		factory(jQuery, moment);
@@ -206,7 +206,7 @@ function isForcedAtomicOption(name) {
 
 
 // TODO: document the structure and ordering of a FullCalendar lang file
-// TODO: rename everything "lang" to "locale", like what the moment project did
+// TODO: rename everything "lang" to "locale", like what the moment-2.10.2 project did
 
 
 // Initialize jQuery UI datepicker translations while using some of the translations
@@ -338,8 +338,8 @@ var momComputableOptions = {
 };
 
 
-// Returns moment's internal locale data. If doesn't exist, returns English.
-// Works with moment-pre-2.8
+// Returns moment-2.10.2's internal locale data. If doesn't exist, returns English.
+// Works with moment-2.10.2-pre-2.8
 function getMomentLocaleData(langCode) {
 	var func = moment.localeData || moment.langData;
 	return func.call(moment, langCode) ||
@@ -347,7 +347,7 @@ function getMomentLocaleData(langCode) {
 }
 
 
-// Initialize English by forcing computation of moment-derived options.
+// Initialize English by forcing computation of moment-2.10.2-derived options.
 // Also, sets it as the default.
 fc.lang('en', englishDefaults);
 
@@ -653,7 +653,7 @@ function computeIntervalDuration(start, end) {
 	}
 
 	durationInput[unit] = val;
-	return moment.duration(durationInput);
+	return moment-2.10.2.duration(durationInput);
 }
 */
 
@@ -835,7 +835,7 @@ function debounce(func, wait) {
 var ambigTimeOrZoneRegex =
 	/^\s*\d{4}-(?:(\d\d-\d\d)|(W\d\d$)|(W\d\d-\d)|(\d\d\d))((T| )(\d\d(:\d\d(:\d\d(\.\d+)?)?)?)?)?$/;
 var newMomentProto = moment.fn; // where we will attach our new methods
-var oldMomentProto = $.extend({}, newMomentProto); // copy of original moment methods
+var oldMomentProto = $.extend({}, newMomentProto); // copy of original moment-2.10.2 methods
 var allowValueOptimization;
 var setUTCValues; // function defined below
 var setLocalValues; // function defined below
@@ -844,20 +844,20 @@ var setLocalValues; // function defined below
 // Creating
 // -------------------------------------------------------------------------------------------------
 
-// Creates a new moment, similar to the vanilla moment(...) constructor, but with
-// extra features (ambiguous time, enhanced formatting). When given an existing moment,
-// it will function as a clone (and retain the zone of the moment). Anything else will
-// result in a moment in the local zone.
+// Creates a new moment-2.10.2, similar to the vanilla moment-2.10.2(...) constructor, but with
+// extra features (ambiguous time, enhanced formatting). When given an existing moment-2.10.2,
+// it will function as a clone (and retain the zone of the moment-2.10.2). Anything else will
+// result in a moment-2.10.2 in the local zone.
 fc.moment = function() {
 	return makeMoment(arguments);
 };
 
-// Sames as fc.moment, but forces the resulting moment to be in the UTC timezone.
+// Sames as fc.moment-2.10.2, but forces the resulting moment-2.10.2 to be in the UTC timezone.
 fc.moment.utc = function() {
 	var mom = makeMoment(arguments, true);
 
 	// Force it into UTC because makeMoment doesn't guarantee it
-	// (if given a pre-existing moment for example)
+	// (if given a pre-existing moment-2.10.2 for example)
 	if (mom.hasTime()) { // don't give ambiguously-timed moments a UTC zone
 		mom.utc();
 	}
@@ -865,17 +865,17 @@ fc.moment.utc = function() {
 	return mom;
 };
 
-// Same as fc.moment, but when given an ISO8601 string, the timezone offset is preserved.
+// Same as fc.moment-2.10.2, but when given an ISO8601 string, the timezone offset is preserved.
 // ISO8601 strings with no timezone offset will become ambiguously zoned.
 fc.moment.parseZone = function() {
 	return makeMoment(arguments, true, true);
 };
 
-// Builds an enhanced moment from args. When given an existing moment, it clones. When given a
-// native Date, or called with no arguments (the current time), the resulting moment will be local.
+// Builds an enhanced moment-2.10.2 from args. When given an existing moment-2.10.2, it clones. When given a
+// native Date, or called with no arguments (the current time), the resulting moment-2.10.2 will be local.
 // Anything else needs to be "parsed" (a string or an array), and will be affected by:
 //    parseAsUTC - if there is no zone information, should we parse the input in UTC?
-//    parseZone - if there is zone information, should we force the zone of the moment?
+//    parseZone - if there is zone information, should we force the zone of the moment-2.10.2?
 function makeMoment(args, parseAsUTC, parseZone) {
 	var input = args[0];
 	var isSingleString = args.length == 1 && typeof input === 'string';
@@ -899,7 +899,7 @@ function makeMoment(args, parseAsUTC, parseZone) {
 			if (ambigDateOfMonthRegex.test(input)) {
 				// accept strings like '2014-05', but convert to the first of the month
 				input += '-01';
-				args = [ input ]; // for when we pass it on to moment's constructor
+				args = [ input ]; // for when we pass it on to moment-2.10.2's constructor
 				isAmbigTime = true;
 				isAmbigZone = true;
 			}
@@ -942,7 +942,7 @@ function makeMoment(args, parseAsUTC, parseZone) {
 
 
 // A clone method that works with the flags related to our enhanced functionality.
-// In the future, use moment.momentProperties
+// In the future, use moment-2.10.2.momentProperties
 newMomentProto.clone = function() {
 	var mom = oldMomentProto.clone.apply(this, arguments);
 
@@ -960,15 +960,15 @@ newMomentProto.clone = function() {
 // -------------------------------------------------------------------------------------------------
 
 // GETTER
-// Returns a Duration with the hours/minutes/seconds/ms values of the moment.
-// If the moment has an ambiguous time, a duration of 00:00 will be returned.
+// Returns a Duration with the hours/minutes/seconds/ms values of the moment-2.10.2.
+// If the moment-2.10.2 has an ambiguous time, a duration of 00:00 will be returned.
 //
 // SETTER
 // You can supply a Duration, a Moment, or a Duration-like argument.
-// When setting the time, and the moment has an ambiguous time, it then becomes unambiguous.
+// When setting the time, and the moment-2.10.2 has an ambiguous time, it then becomes unambiguous.
 newMomentProto.time = function(time) {
 
-	// Fallback to the original method (if there is one) if this moment wasn't created via FullCalendar.
+	// Fallback to the original method (if there is one) if this moment-2.10.2 wasn't created via FullCalendar.
 	// `time` is a generic enough method name where this precaution is necessary to avoid collisions w/ other plugins.
 	if (!this._fullCalendar) {
 		return oldMomentProto.time.apply(this, arguments);
@@ -984,7 +984,7 @@ newMomentProto.time = function(time) {
 	}
 	else { // setter
 
-		this._ambigTime = false; // mark that the moment now has a time
+		this._ambigTime = false; // mark that the moment-2.10.2 now has a time
 
 		if (!moment.isDuration(time) && !moment.isMoment(time)) {
 			time = moment.duration(time);
@@ -1006,8 +1006,8 @@ newMomentProto.time = function(time) {
 	}
 };
 
-// Converts the moment to UTC, stripping out its time-of-day and timezone offset,
-// but preserving its YMD. A moment with a stripped time will display no time
+// Converts the moment-2.10.2 to UTC, stripping out its time-of-day and timezone offset,
+// but preserving its YMD. A moment-2.10.2 with a stripped time will display no time
 // nor timezone offset when .format() is called.
 newMomentProto.stripTime = function() {
 	var a;
@@ -1021,7 +1021,7 @@ newMomentProto.stripTime = function() {
 		setUTCValues(this, a.slice(0, 3)); // set the year/month/date. time will be zero
 
 		// Mark the time as ambiguous. This needs to happen after the .utc() call, which calls .zone(),
-		// which clears all ambig flags. Same with setUTCValues with moment-timezone.
+		// which clears all ambig flags. Same with setUTCValues with moment-2.10.2-timezone.
 		this._ambigTime = true;
 		this._ambigZone = true; // if ambiguous time, also ambiguous timezone offset
 	}
@@ -1029,7 +1029,7 @@ newMomentProto.stripTime = function() {
 	return this; // for chaining
 };
 
-// Returns if the moment has a non-ambiguous time (boolean)
+// Returns if the moment-2.10.2 has a non-ambiguous time (boolean)
 newMomentProto.hasTime = function() {
 	return !this._ambigTime;
 };
@@ -1038,8 +1038,8 @@ newMomentProto.hasTime = function() {
 // Timezone
 // -------------------------------------------------------------------------------------------------
 
-// Converts the moment to UTC, stripping out its timezone offset, but preserving its
-// YMD and time-of-day. A moment with a stripped timezone offset will display no
+// Converts the moment-2.10.2 to UTC, stripping out its timezone offset, but preserving its
+// YMD and time-of-day. A moment-2.10.2 with a stripped timezone offset will display no
 // timezone offset when .format() is called.
 newMomentProto.stripZone = function() {
 	var a, wasAmbigTime;
@@ -1059,14 +1059,14 @@ newMomentProto.stripZone = function() {
 		}
 
 		// Mark the zone as ambiguous. This needs to happen after the .utc() call, which calls .zone(),
-		// which clears all ambig flags. Same with setUTCValues with moment-timezone.
+		// which clears all ambig flags. Same with setUTCValues with moment-2.10.2-timezone.
 		this._ambigZone = true;
 	}
 
 	return this; // for chaining
 };
 
-// Returns of the moment has a non-ambiguous timezone offset (boolean)
+// Returns of the moment-2.10.2 has a non-ambiguous timezone offset (boolean)
 newMomentProto.hasZone = function() {
 	return !this._ambigZone;
 };
@@ -1092,7 +1092,7 @@ newMomentProto.local = function() {
 	oldMomentProto.local.apply(this, arguments); // will clear ambig flags
 
 	if (wasAmbigZone) {
-		// If the moment was ambiguously zoned, the date fields were stored as UTC.
+		// If the moment-2.10.2 was ambiguously zoned, the date fields were stored as UTC.
 		// We want to preserve these, but in local time.
 		setLocalValues(this, a);
 	}
@@ -1105,7 +1105,7 @@ newMomentProto.local = function() {
 // -------------------------------------------------------------------------------------------------
 
 newMomentProto.format = function() {
-	if (this._fullCalendar && arguments[0]) { // an enhanced moment? and a format string provided?
+	if (this._fullCalendar && arguments[0]) { // an enhanced moment-2.10.2? and a format string provided?
 		return formatDate(this, arguments[0]); // our extended formatting
 	}
 	if (this._ambigTime) {
@@ -1131,7 +1131,7 @@ newMomentProto.toISOString = function() {
 // Querying
 // -------------------------------------------------------------------------------------------------
 
-// Is the moment within the specified range? `end` is exclusive.
+// Is the moment-2.10.2 within the specified range? `end` is exclusive.
 // FYI, this method is not a standard Moment method, so always do our enhanced logic.
 newMomentProto.isWithin = function(start, end) {
 	var a = commonlyAmbiguate([ this, start, end ]);
@@ -1143,7 +1143,7 @@ newMomentProto.isWithin = function(start, end) {
 newMomentProto.isSame = function(input, units) {
 	var a;
 
-	// only do custom logic if this is an enhanced moment
+	// only do custom logic if this is an enhanced moment-2.10.2
 	if (!this._fullCalendar) {
 		return oldMomentProto.isSame.apply(this, arguments);
 	}
@@ -1168,7 +1168,7 @@ $.each([
 	newMomentProto[methodName] = function(input, units) {
 		var a;
 
-		// only do custom logic if this is an enhanced moment
+		// only do custom logic if this is an enhanced moment-2.10.2
 		if (!this._fullCalendar) {
 			return oldMomentProto[methodName].apply(this, arguments);
 		}
@@ -1182,8 +1182,8 @@ $.each([
 // Misc Internals
 // -------------------------------------------------------------------------------------------------
 
-// given an array of moment-like inputs, return a parallel array w/ moments similarly ambiguated.
-// for example, of one moment has ambig time, but not others, all moments will have their time stripped.
+// given an array of moment-2.10.2-like inputs, return a parallel array w/ moments similarly ambiguated.
+// for example, of one moment-2.10.2 has ambig time, but not others, all moments will have their time stripped.
 // set `preserveTime` to `true` to keep times, but only normalize zone ambiguity.
 // returns the original moments if no modifications are necessary.
 function commonlyAmbiguate(inputs, preserveTime) {
@@ -1204,7 +1204,7 @@ function commonlyAmbiguate(inputs, preserveTime) {
 		moms.push(mom);
 	}
 
-	// strip each moment down to lowest common ambiguity
+	// strip each moment-2.10.2 down to lowest common ambiguity
 	// use clones to avoid modifying the original moments
 	for (i = 0; i < len; i++) {
 		mom = moms[i];
@@ -1219,7 +1219,7 @@ function commonlyAmbiguate(inputs, preserveTime) {
 	return moms;
 }
 
-// Transfers all the flags related to ambiguous time/zone from the `src` moment to the `dest` moment
+// Transfers all the flags related to ambiguous time/zone from the `src` moment-2.10.2 to the `dest` moment-2.10.2
 function transferAmbigs(src, dest) {
 	if (src._ambigTime) {
 		dest._ambigTime = true;
@@ -1237,7 +1237,7 @@ function transferAmbigs(src, dest) {
 }
 
 
-// Sets the year/month/date/etc values of the moment from the given array.
+// Sets the year/month/date/etc values of the moment-2.10.2 from the given array.
 // Inefficient because it calls each individual setter.
 function setMomentValues(mom, a) {
 	mom.year(a[0] || 0)
@@ -1249,21 +1249,21 @@ function setMomentValues(mom, a) {
 		.milliseconds(a[6] || 0);
 }
 
-// Can we set the moment's internal date directly?
+// Can we set the moment-2.10.2's internal date directly?
 allowValueOptimization = '_d' in moment() && 'updateOffset' in moment;
 
-// Utility function. Accepts a moment and an array of the UTC year/month/date/etc values to set.
-// Assumes the given moment is already in UTC mode.
+// Utility function. Accepts a moment-2.10.2 and an array of the UTC year/month/date/etc values to set.
+// Assumes the given moment-2.10.2 is already in UTC mode.
 setUTCValues = allowValueOptimization ? function(mom, a) {
-	// simlate what moment's accessors do
+	// simlate what moment-2.10.2's accessors do
 	mom._d.setTime(Date.UTC.apply(Date, a));
 	moment.updateOffset(mom, false); // keepTime=false
 } : setMomentValues;
 
-// Utility function. Accepts a moment and an array of the local year/month/date/etc values to set.
-// Assumes the given moment is already in local mode.
+// Utility function. Accepts a moment-2.10.2 and an array of the local year/month/date/etc values to set.
+// Assumes the given moment-2.10.2 is already in local mode.
 setLocalValues = allowValueOptimization ? function(mom, a) {
-	// simlate what moment's accessors do
+	// simlate what moment-2.10.2's accessors do
 	mom._d.setTime(+new Date( // FYI, there is now way to apply an array of args to a constructor
 		a[0] || 0,
 		a[1] || 0,
@@ -1282,7 +1282,7 @@ setLocalValues = allowValueOptimization ? function(mom, a) {
 
 // call this if you want Moment's original format method to be used
 function oldMomentFormat(mom, formatStr) {
-	return oldMomentProto.format.call(mom, formatStr); // oldMomentProto defined in moment-ext.js
+	return oldMomentProto.format.call(mom, formatStr); // oldMomentProto defined in moment-2.10.2-ext.js
 }
 
 
@@ -1354,7 +1354,7 @@ function formatRange(date1, date2, formatStr, separator, isRTL) {
 	date1 = fc.moment.parseZone(date1);
 	date2 = fc.moment.parseZone(date2);
 
-	localeData = (date1.localeData || date1.lang).call(date1); // works with moment-pre-2.8
+	localeData = (date1.localeData || date1.lang).call(date1); // works with moment-2.10.2-pre-2.8
 
 	// Expand localized format strings, like "LL" -> "MMMM D YYYY"
 	formatStr = localeData.longDateFormat(formatStr) || formatStr;
@@ -6922,15 +6922,15 @@ var View = fc.View = Class.extend({
 	t.defaultTimedEventDuration = moment.duration(options.defaultTimedEventDuration);
 
 
-	// Builds a moment using the settings of the current calendar: timezone and language.
-	// Accepts anything the vanilla moment() constructor accepts.
+	// Builds a moment-2.10.2 using the settings of the current calendar: timezone and language.
+	// Accepts anything the vanilla moment-2.10.2() constructor accepts.
 	t.moment = function() {
 		var mom;
 
 		if (options.timezone === 'local') {
 			mom = fc.moment.apply(null, arguments);
 
-			// Force the moment to be local, because fc.moment doesn't guarantee it.
+			// Force the moment-2.10.2 to be local, because fc.moment-2.10.2 doesn't guarantee it.
 			if (mom.hasTime()) { // don't give ambiguously-timed moments a local zone
 				mom.local();
 			}
@@ -6942,10 +6942,10 @@ var View = fc.View = Class.extend({
 			mom = fc.moment.parseZone.apply(null, arguments); // let the input decide the zone
 		}
 
-		if ('_locale' in mom) { // moment 2.8 and above
+		if ('_locale' in mom) { // moment-2.10.2 2.8 and above
 			mom._locale = localeData;
 		}
-		else { // pre-moment-2.8
+		else { // pre-moment-2.10.2-2.8
 			mom._lang = localeData;
 		}
 
@@ -6967,7 +6967,7 @@ var View = fc.View = Class.extend({
 	};
 
 
-	// Returns a moment for the current date, as defined by the client's computer,
+	// Returns a moment-2.10.2 for the current date, as defined by the client's computer,
 	// or overridden by the `now` option.
 	t.getNow = function() {
 		var now = options.now;
@@ -6978,7 +6978,7 @@ var View = fc.View = Class.extend({
 	};
 
 
-	// Calculates the week number for a moment according to the calendar's
+	// Calculates the week number for a moment-2.10.2 according to the calendar's
 	// `weekNumberCalculation` setting.
 	t.calculateWeekNumber = function(mom) {
 		var calc = options.weekNumberCalculation;
@@ -7028,7 +7028,7 @@ var View = fc.View = Class.extend({
 	// Produces a human-readable string for the given duration.
 	// Side-effect: changes the locale of the given duration.
 	function humanizeDuration(duration) {
-		return (duration.locale || duration.lang).call(duration, options.lang) // works moment-pre-2.8
+		return (duration.locale || duration.lang).call(duration, options.lang) // works moment-2.10.2-pre-2.8
 			.humanize();
 	}
 

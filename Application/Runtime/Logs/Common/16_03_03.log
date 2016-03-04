@@ -136,3 +136,33 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
 ERR: 无法加载模块:Application
 
+[ 2016-03-03T22:18:40+08:00 ] ::1 /1fengou/Public/css/ionic-2.0.1/css/ionic.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-03T22:19:26+08:00 ] ::1 /1fengou/Public/css/ionicons-2.0.1/css/ionic.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-03T22:49:00+08:00 ] ::1 /1fengou/Public/js/respond/respond.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001507s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-03T22:50:30+08:00 ] ::1 /1fengou/Public/js/html5shiv/html5shiv.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-03T22:50:30+08:00 ] ::1 /1fengou/Public/js/moment/moment.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+ERR: 无法加载模块:Public
+

@@ -14,7 +14,7 @@
     });
 
   } else if (typeof exports !== 'undefined') {
-    var momentjs = require('moment');
+    var momentjs = require('moment-2.10.2');
     var jQuery;
     try {
       jQuery = require('jquery');
@@ -872,7 +872,7 @@
                 leftOrRight = isLeft ? 'left' : 'right',
                 cal = this.container.find('.calendar.'+leftOrRight);
 
-            // Month must be Number for new moment versions
+            // Month must be Number for new moment-2.10.2 versions
             var month = parseInt(cal.find('.monthselect').val(), 10);
             var year = cal.find('.yearselect').val();
 

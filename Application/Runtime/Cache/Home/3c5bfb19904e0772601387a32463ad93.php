@@ -389,19 +389,19 @@
                     <i class="fa fa-dashboard"></i> <span>商城首页</span> <i class="fa fa-home pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index/type/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
+                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> 每日精选</a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="http://localhost/1fengou/index.php/home/Index/editProduct">
+                <a href="http://localhost/1fengou/index.php/home/Manage/editProduct">
                     <i class="fa fa-files-o"></i>
                     <span>新建商品</span>
                     <span class="label label-primary pull-right">6</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Index/index/type/manage">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -501,7 +501,7 @@
             <div class="row">
                 <section class="col-lg-12 connectedSortable">
                     <div>
-                        <form id="commentForm" action="/1fengou/index.php/Home/Index/saveProduct" enctype="multipart/form-data" method="post" >
+                        <form id="commentForm" action="/1fengou/index.php/Home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
                             <div class="form-group">
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="<?php echo ($productList['id']); ?>" style="display:none"/>
                             </div>
@@ -523,7 +523,7 @@
                             <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
                             </div>
                             <div>
-                                <input type="file" id="test-image-file" name="photo" class="btn btn-info btn-lg active" />
+                                <input type="file" id="test-image-file" name="photo" onchange="" class="btn btn-info btn-lg active" />
                             </div>
                             <div id="test-file-info">
                             </div>

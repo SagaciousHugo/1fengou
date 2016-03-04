@@ -343,19 +343,19 @@
                     <i class="fa fa-dashboard"></i> <span>商城首页</span> <i class="fa fa-home pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index/type/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
+                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> 每日精选</a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="http://localhost/1fengou/index.php/home/Index/editProduct">
+                <a href="http://localhost/1fengou/index.php/home/Manage/editProduct">
                     <i class="fa fa-files-o"></i>
                     <span>新建商品</span>
                     <span class="label label-primary pull-right">6</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Index/index/type/manage">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -497,10 +497,10 @@
                                                     <img width="150" height="150" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
                                                 </td>
                                                 <td>
-                                                    <a class=".btn.btn-app" href="http://localhost/1fengou/index.php/home/Index/editProduct/id/<?php echo ($vo['id']); ?>">
+                                                    <a class=".btn.btn-app" href="http://localhost/1fengou/index.php/home/Manage/editProduct/id/<?php echo ($vo['id']); ?>">
                                                         <i class="fa fa-edit"></i> 修改
                                                     </a>
-                                                    <a class=".btn.btn-app" href="http://localhost/1fengou/index.php/home/Index/deleteProduct/id/<?php echo ($vo['id']); ?>">
+                                                    <a class=".btn.btn-app" href="http://localhost/1fengou/index.php/home/Manage/deleteProduct/id/<?php echo ($vo['id']); ?>">
                                                         <i class="fa fa-remove"></i> 删除
                                                     </a>
                                                 </td>

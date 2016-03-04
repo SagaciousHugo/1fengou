@@ -2,7 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    //列表查询
+
     public function index($page=null,$pageCount=10){
         $User = M('Product');
         if($page==null){

@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9173cec-c4ea-4041-b597-64e1c908d58b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-03/56d85488e0370.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Resources/Images2016-03-03/56d8550f584d2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_04.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_05.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/AdminLTE/dist/css/font.googleapis.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/css/bootstrap/js/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/css/bootstrap/js/tooltip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Base/common.html" afterPath="$PROJECT_DIR$/Application/Home/View/Base/common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/editProduct.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/editProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/manageProduct.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/manageProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3c5bfb19904e0772601387a32463ad93.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3c5bfb19904e0772601387a32463ad93.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f2ed2d116ee9faa6b5ea1d732a76329f.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f2ed2d116ee9faa6b5ea1d732a76329f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_03.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_03.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/AdminLTE/dist/css/AdminLTE.min.css" afterPath="$PROJECT_DIR$/Public/AdminLTE/dist/css/AdminLTE.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/css/common.css" afterPath="$PROJECT_DIR$/Public/css/common.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/13d35fab76c0a5cb9d07671acb014ca9.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4ebe67d4b0b817007345bdb120321d83.php" />
     </list>
     <ignored path="thinkphp3.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,8 +59,8 @@
       <file leaf-file-name="manageProduct.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/manageProduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46097815">
-              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.50972223">
+              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
               <folding>
                 <element signature="n#section#0;n#div#0;n#block#1;n#!!top" expanded="false" />
               </folding>
@@ -424,7 +405,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457017268024</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="删除二次确认，删除成功提示，删除后重载页面（使用ajax）,&#10;批量删除获取商品ID">
+      <created>1457142365629</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1457142365629</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -433,14 +420,14 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21728516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2367387" sideWeight="0.50292826" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2367387" sideWeight="0.50292826" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66502947" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -481,7 +468,8 @@
     <MESSAGE value="Merge branch 'dev' of https://github.com/SagaciousHugo/1fengou into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;页面调整，Index控制器修改，部分路径变化" />
     <MESSAGE value="Merge branch 'dev' of https://github.com/SagaciousHugo/1fengou into dev&#10;                      &#10;                      # Conflicts:&#10;                      #&#9;.idea/workspace.xml&#10;                      页面调整，Index控制器修改，部分路径变化" />
     <MESSAGE value="将所有cdn文件替换为本地文件提高响应速度" />
-    <option name="LAST_COMMIT_MESSAGE" value="将所有cdn文件替换为本地文件提高响应速度" />
+    <MESSAGE value="删除二次确认，删除成功提示，删除后重载页面（使用ajax）,&#10;批量删除获取商品ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除二次确认，删除成功提示，删除后重载页面（使用ajax）,&#10;批量删除获取商品ID" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -819,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/manageProduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46097815">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.50972223">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
           <folding>
             <element signature="n#section#0;n#div#0;n#block#1;n#!!top" expanded="false" />
           </folding>

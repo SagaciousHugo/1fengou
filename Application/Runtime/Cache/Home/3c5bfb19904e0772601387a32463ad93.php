@@ -41,15 +41,18 @@
         <script src="/1fengou/Public/js/respond-1.4.2/respond.min.js"></script>
         <![endif]-->
 
+        <!-- jQuery 2.1.4 -->
+        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!--        &lt;!&ndash;jquery-validate&ndash;&gt;
+        <script src="/1fengou/Public/js/jquery.validate.min.js"></script>-->
+        <!--bootstrap-tooltip-->
+        <script src="/1fengou/Public/css/bootstrap/js/tooltip.js"></script>
+        <!--bootstrap-popover-->
+        <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
+
         
     <script type="text/javascript">
-        /*alert('jQuery版本：' + $.fn.jquery);*/
-        $(function() {
-            /*
-             表单验证初始化
-             */
-            $("#commentForm").validate();
-
+        $(function(){
             /*
              使用H5的API进行商品缩略图读取和预览
              */
@@ -78,12 +81,13 @@
                 }
                 // 读取文件:
                 var reader = new FileReader();
+                // 以DataURL的形式读取文件:
+                reader.readAsDataURL(file);
                 reader.onload = function(e) {
                     var data = e.target.result; // 'data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...'
                     preview.style.backgroundImage = "url(" + data + ")";
                 };
-                // 以DataURL的形式读取文件:
-                reader.readAsDataURL(file);
+
             });
         });
     </script>
@@ -92,7 +96,7 @@
 
     <body class="hold-transition skin-blue sidebar-mini">
         <!--主内容-->
-        <div class="wrapper">
+        <div class="wrapper"  id="contentDiv">
             <!--引入头部header模板-->
             <header class="main-header">
     <!-- Logo -->
@@ -497,11 +501,10 @@
         </section>
 
         <section class="content">
-            <div class="row">
-                <section class="col-lg-12 connectedSortable">
-                    <div>
+<!--            <div class="row">
+                <section class="col-lg-12 col-xs-12">-->
                         <form id="commentForm" action="/1fengou/index.php/Home/Index/saveProduct" enctype="multipart/form-data" method="post" >
-                            <div class="form-group">
+                            <div >
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="<?php echo ($productList['id']); ?>" style="display:none"/>
                             </div>
                             <div>
@@ -522,16 +525,15 @@
                             <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
                             </div>
                             <div>
-                                <input type="file" id="test-image-file" name="photo" class="btn btn-info btn-lg active" />
+                                <input type="file" id="test-image-file" name="photo" class="active" />
                             </div>
                             <div id="test-file-info">
                             </div>
                             <!--<input type="submit" value="提交" class="btn btn-success btn-lg active">-->
-                            <button type="submit" class="btn btn-default">提交</button>
+                            <button type="submit" class="btn btn-success">提交</button>
                         </form>
-                    </div>
-                </section>
-            </div>
+<!--                </section>
+            </div>-->
         </section>
     </div>
 
@@ -743,8 +745,6 @@
 
         </div>
 
-        <!-- jQuery 2.1.4 -->
-        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="/1fengou/Public/AdminLTE/plugins/jQueryUI/jquery-ui.min.js"></script>
 

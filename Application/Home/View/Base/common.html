@@ -41,12 +41,21 @@
         <script src="/1fengou/Public/js/respond-1.4.2/respond.min.js"></script>
         <![endif]-->
 
+        <!-- jQuery 2.1.4 -->
+        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!--        &lt;!&ndash;jquery-validate&ndash;&gt;
+        <script src="/1fengou/Public/js/jquery.validate.min.js"></script>-->
+        <!--bootstrap-tooltip-->
+        <script src="/1fengou/Public/css/bootstrap/js/tooltip.js"></script>
+        <!--bootstrap-popover-->
+        <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
+
         <block name="defineScript"></block>
     </head>
 
     <body class="hold-transition skin-blue sidebar-mini">
         <!--<block name="main">主内容</block>-->
-        <div class="wrapper">
+        <div class="wrapper"  id="contentDiv">
             <!--引入头部header模板-->
             <include file="Public/header"/>
 
@@ -63,8 +72,6 @@
             <include file="Public/controlSidebar"/>
         </div>
 
-        <!-- jQuery 2.1.4 -->
-        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="/1fengou/Public/AdminLTE/plugins/jQueryUI/jquery-ui.min.js"></script>
 

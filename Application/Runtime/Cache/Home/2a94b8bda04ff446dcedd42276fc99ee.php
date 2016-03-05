@@ -41,12 +41,21 @@
         <script src="/1fengou/Public/js/respond-1.4.2/respond.min.js"></script>
         <![endif]-->
 
+        <!-- jQuery 2.1.4 -->
+        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!--        &lt;!&ndash;jquery-validate&ndash;&gt;
+        <script src="/1fengou/Public/js/jquery.validate.min.js"></script>-->
+        <!--bootstrap-tooltip-->
+        <script src="/1fengou/Public/css/bootstrap/js/tooltip.js"></script>
+        <!--bootstrap-popover-->
+        <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
+
         
     </head>
 
     <body class="hold-transition skin-blue sidebar-mini">
         <!--主内容-->
-        <div class="wrapper">
+        <div class="wrapper"  id="contentDiv">
             <!--引入头部header模板-->
             <header class="main-header">
     <!-- Logo -->
@@ -526,9 +535,9 @@
                   <p><span><i class="fa fa-cny"></i> 价格</span>：<?php echo ($vo['price']); ?></p>
                   <p><span><i class="fa fa-file-text"></i> 简介</span>：<?php echo ($vo['introduce']); ?></p>
                   <p><span><i class="fa fa-thumbs-o-up"></i> 已售</span>：<?php echo ($vo['sales']); ?></p>
-                  <a href="#" class="btn btn-info btn-lg active" role="button">查看详情</a>
-                  <a href="#" class="btn btn-danger btn-lg active" role="button">立即购买</a>
-                  <a href="#" class="btn btn-success btn-lg active" role="button">加入购物车</a>
+                  <a href="#" class="btn btn-info btn-lg btn-sm active" role="button">查看详情</a>
+                  <a href="#" class="btn btn-danger btn-lg btn-sm active" role="button">立即购买</a>
+                  <a href="#" class="btn btn-success btn-lg btn-sm active" role="button">加入购物车</a>
                 </div>
                 <br/><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
@@ -879,8 +888,6 @@
 
         </div>
 
-        <!-- jQuery 2.1.4 -->
-        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="/1fengou/Public/AdminLTE/plugins/jQueryUI/jquery-ui.min.js"></script>
 

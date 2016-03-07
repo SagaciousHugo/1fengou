@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!--表格正文-->
 <div class="col-lg-12">
-    <table id="productInfo" class="table table-bordered table-striped table-hover">
+    <table id="productInfo" class="table table-bordered table-striped table-hover" style="table-layout:fixed ; ">
         <thead>
             <tr>
                 <th>
@@ -45,7 +45,7 @@
                         <td align="center">
                             <?php echo ($vo['price']); ?>
                         </td>
-                        <td align="center">
+                        <td align="center" style="word-wrap:break-word;overflow:hidden;">
                             <?php echo ($vo['introduce']); ?>
                         </td>
                         <td align="center">

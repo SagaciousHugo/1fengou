@@ -33,7 +33,7 @@
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
         <!-- pager css -->
-        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/pager.css">
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/page.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,64 +78,16 @@
                 }
             });
 
-            /*alert(<?php echo ($lala); ?>);*/
             $("#showPerPage").change(function(){
                 var perPage = $("#showPerPage").val();
                 $.ajax({
                     type:"GET",
-                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/" + <?php echo ($page); ?> + "/pageCount/" + perPage,
+                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/" + <?php echo ($page); ?> + "/pageCount/" + perPage + "/type/ajax",
                     success:function(data){
                         $("#manageTable").html(data);
-/*                        var total = $('#hideTotalPage').val();
-                        PageClick = function(pageclicknumber){
- /!*                           /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
-                            $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
-                            var perPage2 = $("#showPerPage").val();*!/
-                            $.ajax({
-                                type:"GET",
-                                url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + (<?php echo ($page); ?> + 1) + "/pageCount/" + perPage2,
-                                success:function(data){
-                                    $("#manageTable").html(data);
-                                    var total = $('#hideTotalPage').val();
-                                    PageClick = function(pageclicknumber){
-                                        /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
-                                        $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
-                                    }
-                                    /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
-                                    $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
-                                }
-                            })
-                        }
-                        /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
-                        $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});*/
                     }
                 });
             })
-
-           /* PageClick = function(pageclicknumber){
-                /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:<?php echo ($totalPages); ?>,countPerPage:perPage2,buttonClickCallback:PageClick});*!/
-                $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:<?php echo ($totalPages); ?>,buttonClickCallback:PageClick});
-                var perPage2 = $("#showPerPage").val();
-                $.ajax({
-                    type:"GET",
-                    url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + (<?php echo ($page); ?> + 1) + "/pageCount/" + perPage2,
-                    success:function(data){
-                        $("#manageTable").html(data);
-                        var total = $('#hideTotalPage').val();
-                        PageClick = function(pageclicknumber){
-                            /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
-                            $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
-                        }
-                        /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
-                        $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
-                    }
-                })
-            }
-
-            /*$('#pageNav').pager({pagenumber:1,pagecount:<?php echo ($totalPages); ?>,countPerPage:perPage2,buttonClickCallback:PageClick});*/
-            /*$('#pageNav').pager({pagenumber:1,pagecount:<?php echo ($totalPages); ?>,buttonClickCallback:PageClick});*/
-
-
         });
 
         function selectCount(){
@@ -203,8 +155,32 @@
 
         function myclick(o){
             var rd = $(o).find('[name=product]');
+        }
 
-            /*rd.prop('checked',!(this.checked));*/
+        function productSearch(){
+            var serContent = $("#query").val();
+            if(serContent != ""){
+                $.ajax({
+                    type:"GET",
+                    url : "http://localhost/1fengou/index.php/home/Manage/index/id/" +  serContent ,
+                    success:function(data){
+                        $("#manageTable").html(data);
+                    }
+                })
+            } else {
+                $('#serContent').modal('show');
+            }
+        }
+
+        function reset(){
+            $("#query").val("");
+            $.ajax({
+                type:"GET",
+                url: "http://localhost/1fengou/index.php/home/Manage/index/p/1/pageCount/10/type/ajax",
+                success:function(data){
+                    $("#manageTable").html(data);
+                }
+            });
         }
     </script>
 
@@ -520,7 +496,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Manage/index/type/woshimingming"">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -641,15 +617,20 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-6">
                                             <div id="example1_filter" class="dataTables_filter">
-                                                <label>查询商品名称:
-                                                    <input type="search" class="form-control input-sm" placeholder="" aria-controls="example1">
-                                                </label>
+                                                <div class="form-group">
+                                                    <label for="query">查询商品ID:
+                                                        <input id="query" type="search" class="form-control input-sm" placeholder="请输入商品ID" aria-controls="example1">
+                                                    </label>
+                                                </div>
+                                                <a class="btn btn-success btn-lg btn-sm active" role="button" href="javascript:productSearch()">查询</a>
+                                                <a class="btn btn-primary btn-lg btn-sm active" role="button" href="javascript:reset()">重置</a>
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-2">
+                                            <label>操作选项：</label>
                                             <a class="btn btn-danger btn-lg btn-sm active" role="button" href="javascript:selectCount()">批量删除</a>
                                             <!--data-toggle="modal" data-target="#deleteConfirm"-->
                                         </div>
@@ -659,31 +640,32 @@
                                     <div id="manageTable">
                                         <!--表格正文-->
 <div class="col-lg-12">
-    <table id="productInfo" class="table table-bordered table-striped table-hover">
+    <table id="productInfo" class="table table-bordered table-striped table-hover" style="table-layout:fixed ; ">
         <thead>
             <tr>
                 <th>
-                    <input type="checkbox" id="selectAll"/>全选
+                    <input type="checkbox" id="selectAll" class="inputSelect"/>
+                    全选
                 </th>
-                <th>
-                    商品Id
+                <th class="tableHead">
+                    商品ID
                 </th>
-                <th>
+                <th class="tableHead">
                     商品名称
                 </th>
-                <th>
+                <th class="tableHead">
                     商品价格(￥)
                 </th>
-                <th>
+                <th class="tableHead">
                     商品简介
                 </th>
-                <th>
+                <th class="tableHead">
                     已售数量
                 </th>
-                <th>
+                <th class="tableHead">
                     商品缩略图
                 </th>
-                <th>
+                <th class="tableHead">
                     操作
                 </th>
             </tr>
@@ -703,7 +685,7 @@
                         <td align="center">
                             <?php echo ($vo['price']); ?>
                         </td>
-                        <td align="center">
+                        <td align="center" style="word-wrap:break-word;overflow:hidden;">
                             <?php echo ($vo['introduce']); ?>
                         </td>
                         <td align="center">
@@ -725,13 +707,13 @@
                 <th>
                     <input type="checkbox" id="selectAll2"/>全选
                 </th>
-                <th>商品Id</th>
-                <th>商品名称</th>
-                <th>商品价格(￥)</th>
-                <th>商品简介</th>
-                <th>已售数量</th>
-                <th>商品缩略图</th>
-                <th>操作</th>
+                <th class="tableHead">商品ID</th>
+                <th class="tableHead">商品名称</th>
+                <th class="tableHead">商品价格(￥)</th>
+                <th class="tableHead">商品简介</th>
+                <th class="tableHead">已售数量</th>
+                <th class="tableHead">商品缩略图</th>
+                <th class="tableHead">操作</th>
             </tr>
         </tfoot>
     </table>
@@ -740,8 +722,8 @@
 <!--表格底部-->
 <div class="row">
     <div class="col-lg-12">
-        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">
-            当前显示：第<?php echo ($from); ?>至<?php echo ($to); ?>条数据，共<?php echo ($total); ?>条数据
+        <div class="dataTables_info" id="nav_info" role="status" aria-live="polite">
+            当前显示：第 <?php echo ($from); ?> 至 <?php echo ($to); ?> 条数据，共 <?php echo ($total); ?> 条数据
             <input id="hideTotalPage" style="display: none" value="<?php echo ($totalPages); ?>" />
         </div>
     </div>
@@ -875,6 +857,33 @@
             </div>
         </div>
     </div>
+
+    <!-- （Modal）用于搜索时请输入内容提示 -->
+    <div class="modal fade" id="serContent" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        操作提示
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    请输入搜索内容!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        确认
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
             <!--引入底部footer模板-->

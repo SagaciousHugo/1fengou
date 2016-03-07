@@ -94,31 +94,52 @@ class ManageController extends Controller
         $User = D('Product');
         $params = I('post.');
         $uploadResult = $this->uploadImages();
-        if($params['id'] == null){
-            //新增商品
-            if(!$User->create($params,1)) {
-                $this->redirect('Manage/editProduct','','2',$User->getError().'，请重新创建商品...');
-            }else {
-                $id = $User->add();
-                if($id === false) {
-                    $this->redirect('Manage/editProduct','','2',$User->getError().'，请重新创建商品...');
-                }else {
-                    $this->redirect('Index/index','','2','新增商品成功，返回首页...');
-                }
-            }
+        if($uploadResult[status]=='error'){
+            $data['status'] = 'error';
+            $data['message'] = '图片上传失败！';
+            $this->ajaxReturn($data);
         }else{
-            //更新商品
-            if(!$User->create($param,2)) {
-                $this->redirect('Manage/editProduct','id='.$params['id'],'2',$User->getError().'，请重新修改本商品...');
-            }else {
-                $id = $User->save();
-                if($id === false) {
-                    $this->redirect('Manage/editProduct','id='.$params['id'],'2',$User->getError().'，请重新修改本商品...');
+            $params['thumbnail'] = $uploadResult['thumbnail'];
+            if($params['id'] == null){
+                //新增商品
+                if(!$User->create($params,1)) {
+                    $data['status'] = 'error';
+                    $data['message'] = '新增商品失败！';
+                    $this->ajaxReturn($data);
                 }else {
-                    $this->redirect('Manage/index','','2','商品信息修改成功，返回商品管理页面...');
+                    $id = $User->add();
+                    if($id === false) {
+                        $data['status'] = 'error';
+                        $data['message'] =  '新增商品失败！';
+                        $this->ajaxReturn($data);
+                    }else {
+                        $data['status'] = 'success';
+                        $data['message'] = '新增id'.$id .'商品成功！';
+                        $this->ajaxReturn($data);
+                    }
+                }
+            }else{
+                //更新商品
+                if(!$User->create($param,2)) {
+                    $data['status'] = 'error';
+                    $data['message'] = '更新商品失败！';
+                    $this->ajaxReturn($data);
+                }else {
+                    $id = $User->save();
+                    if($id === false) {
+                        $data['status'] = 'error';
+                        $data['message'] =  '更新商品失败！';
+                        $this->ajaxReturn($data);
+                    }else {
+                        $data['status'] = 'success';
+                        $data['message'] = '更新id'.$id.'商品成功！';
+                        $this->ajaxReturn($data);
+                    }
                 }
             }
         }
+
+
     }
     //删除商品
     public function deleteProduct($id){

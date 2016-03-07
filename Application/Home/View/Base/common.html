@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="/1fengou/Public/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
+        <!-- pager css -->
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/pager.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,6 +51,9 @@
         <script src="/1fengou/Public/css/bootstrap/js/tooltip.js"></script>
         <!--bootstrap-popover-->
         <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
+
+        <!--jquery.pager.js-->
+        <script src="/1fengou/Public/js/jquery.pager.js"></script>
 
         <block name="defineScript"></block>
     </head>
@@ -81,10 +86,9 @@
         </script>
         <!-- Bootstrap 3.3.5 -->
         <script src="/1fengou/Public/css/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Morris.js charts -->
-        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
 
-        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+
+
         <!-- Sparkline -->
         <script src="/1fengou/Public/AdminLTE/plugins/sparkline/jquery.sparkline.min.js"></script>
         <!-- jvectormap -->
@@ -105,9 +109,14 @@
         <script src="/1fengou/Public/AdminLTE/plugins/fastclick/fastclick.js"></script>
         <!-- AdminLTE App -->
         <script src="/1fengou/Public/AdminLTE/dist/js/app.min.js"></script>
-        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
-        <!-- AdminLTE for demo purposes -->
+
+        <block name="bottomJs"></block>
+
+         <!--AdminLTE for demo purposes -->
         <script src="/1fengou/Public/AdminLTE/dist/js/demo.js"></script>
+<!--        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+        AdminLTE dashboard demo (This is only for demo purposes)
+        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>-->
     </body>
 </html>

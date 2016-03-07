@@ -3,13 +3,16 @@
 <block name="defineScript">
     <script type="text/javascript">
         $(function(){
+            var preview = document.getElementById('test-image-preview'),
+                fileInput = document.getElementById('test-image-file'),
+                info = document.getElementById('test-file-info');
+            var thumbnailPath = "/1fengou/Public/{$productList['thumbnail']}" ;
+            if('{$editType}' == 'update') {
+                preview.style.backgroundImage = "url(" + thumbnailPath + ")";
+            }
             /*
              使用H5的API进行商品缩略图读取和预览
              */
-            var
-                    fileInput = document.getElementById('test-image-file'),
-                    info = document.getElementById('test-file-info'),
-                    preview = document.getElementById('test-image-preview');
             // 监听change事件:
             fileInput.addEventListener('change', function () {
                 // 清除背景图片:
@@ -31,15 +34,26 @@
                 }
                 // 读取文件:
                 var reader = new FileReader();
-                // 以DataURL的形式读取文件:
-                reader.readAsDataURL(file);
                 reader.onload = function(e) {
                     var data = e.target.result; // 'data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...'
                     preview.style.backgroundImage = "url(" + data + ")";
                 };
-
+                // 以DataURL的形式读取文件:
+                reader.readAsDataURL(file);
             });
         });
+
+        function createProduct(){
+            $.ajax({
+               type : "GET",
+                url : "http://localhost/1fengou/index.php/home/Manage/uploadImages",
+                success : function($data){
+                    if($data.status == 'success') {
+
+                    }
+                }
+            });
+        }
     </script>
 </block>
 
@@ -55,10 +69,9 @@
         </section>
 
         <section class="content">
-<!--            <div class="row">
-                <section class="col-lg-12 col-xs-12">-->
-                        <form id="commentForm" action="__URL__/saveProduct" enctype="multipart/form-data" method="post" >
-                            <div >
+                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
+                            <!--__URL__/saveProduct-->
+                            <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="{$productList['id']}" style="display:none"/>
                             </div>
                             <div>
@@ -86,8 +99,6 @@
                             <!--<input type="submit" value="提交" class="btn btn-success btn-lg active">-->
                             <button type="submit" class="btn btn-success">提交</button>
                         </form>
-<!--                </section>
-            </div>-->
         </section>
     </div>
 </block>

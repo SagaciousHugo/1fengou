@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="/1fengou/Public/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
+        <!-- pager css -->
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/pager.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,6 +51,9 @@
         <script src="/1fengou/Public/css/bootstrap/js/tooltip.js"></script>
         <!--bootstrap-popover-->
         <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
+
+        <!--jquery.pager.js-->
+        <script src="/1fengou/Public/js/jquery.pager.js"></script>
 
         
     </head>
@@ -351,19 +356,19 @@
                     <i class="fa fa-dashboard"></i> <span>商城首页</span> <i class="fa fa-home pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index/type/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
+                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> 每日精选</a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="http://localhost/1fengou/index.php/home/Index/editProduct">
+                <a href="http://localhost/1fengou/index.php/home/Manage/editProduct">
                     <i class="fa fa-files-o"></i>
                     <span>新建商品</span>
                     <span class="label label-primary pull-right">6</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Index/index/type/manage">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -583,7 +588,8 @@
             <!-- /.box-header -->
             <div class="box-body no-padding">
               <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
+              <div id="calendar" style="width: 100%">
+              </div>
             </div>
             <!-- /.box-body -->
             <div class="box-footer text-black">
@@ -650,7 +656,8 @@
               </h3>
             </div>
             <div class="box-body">
-              <div id="world-map" style="height: 250px; width: 100%;"></div>
+              <div id="world-map" style="height: 250px; width: 100%;">
+              </div>
             </div>
             <!-- /.box-body-->
             <div class="box-footer no-border">
@@ -897,10 +904,9 @@
         </script>
         <!-- Bootstrap 3.3.5 -->
         <script src="/1fengou/Public/css/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Morris.js charts -->
-        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
 
-        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+
+
         <!-- Sparkline -->
         <script src="/1fengou/Public/AdminLTE/plugins/sparkline/jquery.sparkline.min.js"></script>
         <!-- jvectormap -->
@@ -921,9 +927,20 @@
         <script src="/1fengou/Public/AdminLTE/plugins/fastclick/fastclick.js"></script>
         <!-- AdminLTE App -->
         <script src="/1fengou/Public/AdminLTE/dist/js/app.min.js"></script>
-        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
-        <!-- AdminLTE for demo purposes -->
+
+        
+  <!-- Morris.js charts -->
+  <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+  AdminLTE dashboard demo (This is only for demo purposes)
+  <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+  <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
+
+
+         <!--AdminLTE for demo purposes -->
         <script src="/1fengou/Public/AdminLTE/dist/js/demo.js"></script>
+<!--        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+        AdminLTE dashboard demo (This is only for demo purposes)
+        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>-->
     </body>
 </html>

@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="/1fengou/Public/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
+        <!-- pager css -->
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/pager.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,16 +52,22 @@
         <!--bootstrap-popover-->
         <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
 
+        <!--jquery.pager.js-->
+        <script src="/1fengou/Public/js/jquery.pager.js"></script>
+
         
     <script type="text/javascript">
         $(function(){
+            var preview = document.getElementById('test-image-preview'),
+                fileInput = document.getElementById('test-image-file'),
+                info = document.getElementById('test-file-info');
+            var thumbnailPath = "/1fengou/Public/<?php echo ($productList['thumbnail']); ?>" ;
+            if('<?php echo ($editType); ?>' == 'update') {
+                preview.style.backgroundImage = "url(" + thumbnailPath + ")";
+            }
             /*
              使用H5的API进行商品缩略图读取和预览
              */
-            var
-                    fileInput = document.getElementById('test-image-file'),
-                    info = document.getElementById('test-file-info'),
-                    preview = document.getElementById('test-image-preview');
             // 监听change事件:
             fileInput.addEventListener('change', function () {
                 // 清除背景图片:
@@ -81,15 +89,26 @@
                 }
                 // 读取文件:
                 var reader = new FileReader();
-                // 以DataURL的形式读取文件:
-                reader.readAsDataURL(file);
                 reader.onload = function(e) {
                     var data = e.target.result; // 'data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...'
                     preview.style.backgroundImage = "url(" + data + ")";
                 };
-
+                // 以DataURL的形式读取文件:
+                reader.readAsDataURL(file);
             });
         });
+
+        function createProduct(){
+            $.ajax({
+               type : "GET",
+                url : "http://localhost/1fengou/index.php/home/Manage/uploadImages",
+                success : function($data){
+                    if($data.status == 'success') {
+
+                    }
+                }
+            });
+        }
     </script>
 
     </head>
@@ -392,19 +411,19 @@
                     <i class="fa fa-dashboard"></i> <span>商城首页</span> <i class="fa fa-home pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index/type/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
+                    <li class="active"><a href="http://localhost/1fengou/index.php/home/Index/index"><i class="fa fa-circle-o"></i> 1分购</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> 每日精选</a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="http://localhost/1fengou/index.php/home/Index/editProduct">
+                <a href="http://localhost/1fengou/index.php/home/Manage/editProduct">
                     <i class="fa fa-files-o"></i>
                     <span>新建商品</span>
                     <span class="label label-primary pull-right">6</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Index/index/type/manage">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -501,10 +520,9 @@
         </section>
 
         <section class="content">
-<!--            <div class="row">
-                <section class="col-lg-12 col-xs-12">-->
-                        <form id="commentForm" action="/1fengou/index.php/Home/Index/saveProduct" enctype="multipart/form-data" method="post" >
-                            <div >
+                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
+                            <!--/1fengou/index.php/Home/Manage/saveProduct-->
+                            <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="<?php echo ($productList['id']); ?>" style="display:none"/>
                             </div>
                             <div>
@@ -532,8 +550,6 @@
                             <!--<input type="submit" value="提交" class="btn btn-success btn-lg active">-->
                             <button type="submit" class="btn btn-success">提交</button>
                         </form>
-<!--                </section>
-            </div>-->
         </section>
     </div>
 
@@ -754,10 +770,9 @@
         </script>
         <!-- Bootstrap 3.3.5 -->
         <script src="/1fengou/Public/css/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Morris.js charts -->
-        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
 
-        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+
+
         <!-- Sparkline -->
         <script src="/1fengou/Public/AdminLTE/plugins/sparkline/jquery.sparkline.min.js"></script>
         <!-- jvectormap -->
@@ -778,9 +793,14 @@
         <script src="/1fengou/Public/AdminLTE/plugins/fastclick/fastclick.js"></script>
         <!-- AdminLTE App -->
         <script src="/1fengou/Public/AdminLTE/dist/js/app.min.js"></script>
-        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
-        <!-- AdminLTE for demo purposes -->
+
+        
+
+         <!--AdminLTE for demo purposes -->
         <script src="/1fengou/Public/AdminLTE/dist/js/demo.js"></script>
+<!--        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+        AdminLTE dashboard demo (This is only for demo purposes)
+        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>-->
     </body>
 </html>

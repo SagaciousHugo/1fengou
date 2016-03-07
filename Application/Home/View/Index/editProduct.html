@@ -45,10 +45,12 @@
 
         function createProduct(){
             $.ajax({
-               type : "GET",
-                url : "http://localhost/1fengou/index.php/home/Manage/uploadImages",
+               type : "POST",
+                url : "http://localhost/1fengou/index.php/home/Manage/saveProduct",
                 success : function($data){
                     if($data.status == 'success') {
+
+                    } else{
 
                     }
                 }
@@ -69,7 +71,7 @@
         </section>
 
         <section class="content">
-                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
+                        <form id="commentForm" action="javascript:createProduct()" enctype="multipart/form-data" method="post" >
                             <!--__URL__/saveProduct-->
                             <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="{$productList['id']}" style="display:none"/>

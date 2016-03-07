@@ -685,7 +685,7 @@
                         <td align="center">
                             <?php echo ($vo['price']); ?>
                         </td>
-                        <td align="center" style="word-wrap:break-word;overflow:hidden; ">
+                        <td align="center" style="word-wrap:break-word;overflow:hidden;">
                             <?php echo ($vo['introduce']); ?>
                         </td>
                         <td align="center">

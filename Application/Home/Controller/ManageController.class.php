@@ -11,7 +11,7 @@ class ManageController extends Controller
 {
 
     //列表查询
-    public function index($pageCount=10)
+    public function index($type=null,$pageCount=10)
     {
         $User = M('Product');
         //分页参数计算
@@ -19,9 +19,8 @@ class ManageController extends Controller
         $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
         $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
         $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
-
         //分页插件
-        $page = new \Think\Page($total, $pageCount, I('get.'));
+        $page = new \Think\Page($total,$pageCount, I('get.'));
         $p = $page->show();
 
         //分页参数赋值
@@ -33,16 +32,15 @@ class ManageController extends Controller
         $this->assign('to', $to);
 
         //查询数据
-        $data = $User->page(I('get.p'))->select();
+        $data = $User->page($currentPage, $pageCount)->select();
 
         //查询数据赋值
         $this->assign('productList', $data);
-
+        if (type != null) {
         $this->display('Index:manageProduct');
-
-
-
-
+        }else{
+        $this->display('Index:manageTable');
+         }
     }
 
     //图片上传

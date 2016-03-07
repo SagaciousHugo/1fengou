@@ -28,14 +28,14 @@
                 var perPage = $("#showPerPage").val();
                 $.ajax({
                     type:"GET",
-                    url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + {$page} + "/pageCount/" + perPage,
+                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/" + {$page} + "/pageCount/" + perPage,
                     success:function(data){
                         $("#manageTable").html(data);
-                        var total = $('#hideTotalPage').val();
+/*                        var total = $('#hideTotalPage').val();
                         PageClick = function(pageclicknumber){
-                            /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+ /!*                           /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                             $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
-                            var perPage2 = $("#showPerPage").val();
+                            var perPage2 = $("#showPerPage").val();*!/
                             $.ajax({
                                 type:"GET",
                                 url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + ({$page} + 1) + "/pageCount/" + perPage2,
@@ -43,22 +43,22 @@
                                     $("#manageTable").html(data);
                                     var total = $('#hideTotalPage').val();
                                     PageClick = function(pageclicknumber){
-                                        /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                                        /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                                         $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
                                     }
-                                    /*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                                    /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                                     $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
                                 }
                             })
                         }
-                        /*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
-                        $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
+                        /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
+                        $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});*/
                     }
                 });
             })
 
-            PageClick = function(pageclicknumber){
-                /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:{$totalPages},countPerPage:perPage2,buttonClickCallback:PageClick});*/
+           /* PageClick = function(pageclicknumber){
+                /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:{$totalPages},countPerPage:perPage2,buttonClickCallback:PageClick});*!/
                 $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:{$totalPages},buttonClickCallback:PageClick});
                 var perPage2 = $("#showPerPage").val();
                 $.ajax({
@@ -68,17 +68,17 @@
                         $("#manageTable").html(data);
                         var total = $('#hideTotalPage').val();
                         PageClick = function(pageclicknumber){
-                            /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                            /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                             $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
                         }
-                        /*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                        /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                         $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
                     }
                 })
             }
 
             /*$('#pageNav').pager({pagenumber:1,pagecount:{$totalPages},countPerPage:perPage2,buttonClickCallback:PageClick});*/
-            $('#pageNav').pager({pagenumber:1,pagecount:{$totalPages},buttonClickCallback:PageClick});
+            /*$('#pageNav').pager({pagenumber:1,pagecount:{$totalPages},buttonClickCallback:PageClick});*/
 
 
         });
@@ -209,17 +209,7 @@
                                         <include file="Index/manageTable"/>
                                     </div>
 
-                                    <!--显示分页插件-->
-                                    <div class="row">
-                                        <div class="col-lg-7">
-                                            <div id="pageNav" class="dataTables_paginate paging_simple_numbers">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 分页 -->
-                                    <div class="page">
-                                        {$_page}
-                                    </div>
+
                                 </div>
 
                             </div>

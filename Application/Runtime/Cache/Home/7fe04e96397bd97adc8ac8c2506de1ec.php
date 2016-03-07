@@ -86,4 +86,8 @@
             <input id="hideTotalPage" style="display: none" value="<?php echo ($totalPages); ?>" />
         </div>
     </div>
+    <!-- 分页 -->
+    <div class="page">
+        <?php echo ($_page); ?>
+    </div>
 </div>

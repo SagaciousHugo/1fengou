@@ -37,11 +37,11 @@ class ManageController extends Controller
         if (!$info) {// 上传错误提示错误信息
             $data['status'] = 'error';
             $data['message'] = $upload->getError();
-            $this->ajaxReturn($data);
+            return $data;
         } else {// 上传成功 获取上传文件信息
             $data['status'] = 'success';
             $data['thumbnail'] = "Resources/Images" . $info['savepath'] . $info['savename'];
-            $this->ajaxReturn($data);
+            return $data;
         }
     }
     //根据id查询单个商品信息
@@ -54,6 +54,7 @@ class ManageController extends Controller
     public function saveProduct(){
         $User = D('Product');
         $params = I('post.');
+        $uploadResult = $this->uploadImages();
         if($params['id'] == null){
             //新增商品
             if(!$User->create($params,1)) {

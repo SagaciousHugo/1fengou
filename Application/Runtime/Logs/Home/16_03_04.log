@@ -629,3 +629,204 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
 
+[ 2016-03-04T16:26:17+08:00 ] ::1 /1fengou/index.php/home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: NON)
+
+[ 2016-03-04T16:27:14+08:00 ] ::1 /1fengou/index.php/home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `test_product` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `test_product`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002258s ]
+
+[ 2016-03-04T16:27:16+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 505 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 509 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 513 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 517 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002066s ]
+
+[ 2016-03-04T16:27:18+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `test_product` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `test_product`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2016-03-04T16:28:03+08:00 ] ::1 /1fengou/index.php/home/Manage/deleteProduct/id/119
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `test_product` [ RunTime:0.0075s ]
+SQL: DELETE FROM `test_product` WHERE `id` = 119 [ RunTime:0.0019s ]
+
+[ 2016-03-04T16:28:25+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+SQL: SHOW COLUMNS FROM `test_product` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `test_product`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2016-03-04T16:28:27+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 505 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 509 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 513 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 517 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001748s ]
+
+[ 2016-03-04T16:28:29+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `test_product` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `test_product`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-03-04T16:28:33+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 505 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 509 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 513 行.
+NOTIC: [8] Undefined variable: productList C:\wamp\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 517 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2016-03-04T16:28:35+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `test_product` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `test_product`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001724s ]
+

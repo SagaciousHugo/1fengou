@@ -22,12 +22,7 @@ class ManageController extends Controller
             $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
             //分页插件
             $page = new \Think\Page($total,$pageCount, I('get.'));
-
-
-
             $p = $page->show();
-/*            $P->setConfig('header','个会员');
-            $P->setConfig('prev','ggg');*/
             //查询数据
             $data = $User->page($currentPage, $pageCount)->select();
             //查询数据赋值
@@ -51,10 +46,7 @@ class ManageController extends Controller
             $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
             //分页插件
             $page = new \Think\Page($total,$pageCount, I('get.'));
-
             $p = $page->show();
-/*            $P->setConfig('header','个会员');
-            $P->setConfig('prev','ggg');*/
             //查询数据
             $data = $User->where('id=%d',array($id))->select();
             //查询数据赋值

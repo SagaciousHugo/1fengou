@@ -13,6 +13,8 @@ return array(
     'TMPL_PARSE_STRING'=> array(
 
     ),
+    'TMPL_CACHE_ON' => false,//禁止模板编译缓存
+    'HTML_CACHE_ON' => false,//禁止静态缓存
 
 
 );

@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="/1fengou/Public/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
+        <!-- pager css -->
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/pager.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,12 +43,24 @@
         <script src="/1fengou/Public/js/respond-1.4.2/respond.min.js"></script>
         <![endif]-->
 
+        <!-- jQuery 2.1.4 -->
+        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!--        &lt;!&ndash;jquery-validate&ndash;&gt;
+        <script src="/1fengou/Public/js/jquery.validate.min.js"></script>-->
+        <!--bootstrap-tooltip-->
+        <script src="/1fengou/Public/css/bootstrap/js/tooltip.js"></script>
+        <!--bootstrap-popover-->
+        <script src="/1fengou/Public/css/bootstrap/js/popover.js"></script>
+
+        <!--jquery.pager.js-->
+        <script src="/1fengou/Public/js/jquery.pager.js"></script>
+
         
     </head>
 
     <body class="hold-transition skin-blue sidebar-mini">
         <!--主内容-->
-        <div class="wrapper">
+        <div class="wrapper"  id="contentDiv">
             <!--引入头部header模板-->
             <header class="main-header">
     <!-- Logo -->
@@ -526,11 +540,15 @@
                   <p><span><i class="fa fa-cny"></i> 价格</span>：<?php echo ($vo['price']); ?></p>
                   <p><span><i class="fa fa-file-text"></i> 简介</span>：<?php echo ($vo['introduce']); ?></p>
                   <p><span><i class="fa fa-thumbs-o-up"></i> 已售</span>：<?php echo ($vo['sales']); ?></p>
-                  <a href="#" class="btn btn-info btn-lg active" role="button">查看详情</a>
-                  <a href="#" class="btn btn-danger btn-lg active" role="button">立即购买</a>
-                  <a href="#" class="btn btn-success btn-lg active" role="button">加入购物车</a>
+                  <a href="#" class="btn btn-info btn-lg btn-sm active" role="button">查看详情</a>
+                  <a href="#" class="btn btn-danger btn-lg btn-sm active" role="button">立即购买</a>
+                  <a href="#" class="btn btn-success btn-lg btn-sm active" role="button">加入购物车</a>
                 </div>
                 <br/><?php endforeach; endif; else: echo "" ;endif; ?>
+              <!-- 分页 -->
+              <div class="page">
+                <?php echo ($_page); ?>
+              </div>
             </div>
           </div>
         </section>
@@ -574,7 +592,8 @@
             <!-- /.box-header -->
             <div class="box-body no-padding">
               <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
+              <div id="calendar" style="width: 100%">
+              </div>
             </div>
             <!-- /.box-body -->
             <div class="box-footer text-black">
@@ -641,7 +660,8 @@
               </h3>
             </div>
             <div class="box-body">
-              <div id="world-map" style="height: 250px; width: 100%;"></div>
+              <div id="world-map" style="height: 250px; width: 100%;">
+              </div>
             </div>
             <!-- /.box-body-->
             <div class="box-footer no-border">
@@ -879,8 +899,6 @@
 
         </div>
 
-        <!-- jQuery 2.1.4 -->
-        <script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="/1fengou/Public/AdminLTE/plugins/jQueryUI/jquery-ui.min.js"></script>
 
@@ -890,10 +908,9 @@
         </script>
         <!-- Bootstrap 3.3.5 -->
         <script src="/1fengou/Public/css/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Morris.js charts -->
-        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
 
-        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+
+
         <!-- Sparkline -->
         <script src="/1fengou/Public/AdminLTE/plugins/sparkline/jquery.sparkline.min.js"></script>
         <!-- jvectormap -->
@@ -914,9 +931,20 @@
         <script src="/1fengou/Public/AdminLTE/plugins/fastclick/fastclick.js"></script>
         <!-- AdminLTE App -->
         <script src="/1fengou/Public/AdminLTE/dist/js/app.min.js"></script>
-        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
-        <!-- AdminLTE for demo purposes -->
+
+        
+  <!-- Morris.js charts -->
+  <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+  AdminLTE dashboard demo (This is only for demo purposes)
+  <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+  <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
+
+
+         <!--AdminLTE for demo purposes -->
         <script src="/1fengou/Public/AdminLTE/dist/js/demo.js"></script>
+<!--        <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+        AdminLTE dashboard demo (This is only for demo purposes)
+        <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+        <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>-->
     </body>
 </html>

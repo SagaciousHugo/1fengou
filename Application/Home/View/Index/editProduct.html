@@ -2,20 +2,17 @@
 
 <block name="defineScript">
     <script type="text/javascript">
-        /*alert('jQuery版本：' + $.fn.jquery);*/
-        $(function() {
-            /*
-             表单验证初始化
-             */
-            $("#commentForm").validate();
-
+        $(function(){
+            var preview = document.getElementById('test-image-preview'),
+                fileInput = document.getElementById('test-image-file'),
+                info = document.getElementById('test-file-info');
+            var thumbnailPath = "/1fengou/Public/{$productList['thumbnail']}" ;
+            if('{$editType}' == 'update') {
+                preview.style.backgroundImage = "url(" + thumbnailPath + ")";
+            }
             /*
              使用H5的API进行商品缩略图读取和预览
              */
-            var
-                    fileInput = document.getElementById('test-image-file'),
-                    info = document.getElementById('test-file-info'),
-                    preview = document.getElementById('test-image-preview');
             // 监听change事件:
             fileInput.addEventListener('change', function () {
                 // 清除背景图片:
@@ -45,9 +42,20 @@
                 reader.readAsDataURL(file);
             });
         });
+
+        function createProduct(){
+            $.ajax({
+               type : "GET",
+                url : "http://localhost/1fengou/index.php/home/Manage/uploadImages",
+                success : function($data){
+                    if($data.status == 'success') {
+
+                    }
+                }
+            });
+        }
     </script>
 </block>
-
 
 <block name="mainContent">
     <div class="content-wrapper">
@@ -61,11 +69,9 @@
         </section>
 
         <section class="content">
-            <div class="row">
-                <section class="col-lg-12 connectedSortable">
-                    <div>
-                        <form id="commentForm" action="__URL__/saveProduct" enctype="multipart/form-data" method="post" >
-                            <div class="form-group">
+                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
+                            <!--__URL__/saveProduct-->
+                            <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="{$productList['id']}" style="display:none"/>
                             </div>
                             <div>
@@ -86,16 +92,13 @@
                             <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
                             </div>
                             <div>
-                                <input type="file" id="test-image-file" name="photo" onchange="" class="btn btn-info btn-lg active" />
+                                <input type="file" id="test-image-file" name="photo" class="active" />
                             </div>
                             <div id="test-file-info">
                             </div>
                             <!--<input type="submit" value="提交" class="btn btn-success btn-lg active">-->
-                            <button type="submit" class="btn btn-default">提交</button>
+                            <button type="submit" class="btn btn-success">提交</button>
                         </form>
-                    </div>
-                </section>
-            </div>
         </section>
     </div>
 </block>

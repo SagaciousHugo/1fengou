@@ -88,12 +88,16 @@
                   <p><span><i class="fa fa-cny"></i> 价格</span>：{$vo['price']}</p>
                   <p><span><i class="fa fa-file-text"></i> 简介</span>：{$vo['introduce']}</p>
                   <p><span><i class="fa fa-thumbs-o-up"></i> 已售</span>：{$vo['sales']}</p>
-                  <a href="#" class="btn btn-info btn-lg active" role="button">查看详情</a>
-                  <a href="#" class="btn btn-danger btn-lg active" role="button">立即购买</a>
-                  <a href="#" class="btn btn-success btn-lg active" role="button">加入购物车</a>
+                  <a href="#" class="btn btn-info btn-lg btn-sm active" role="button">查看详情</a>
+                  <a href="#" class="btn btn-danger btn-lg btn-sm active" role="button">立即购买</a>
+                  <a href="#" class="btn btn-success btn-lg btn-sm active" role="button">加入购物车</a>
                 </div>
                 <br/>
               </volist>
+              <!-- 分页 -->
+              <div class="page">
+                {$_page}
+              </div>
             </div>
           </div>
         </section>
@@ -137,7 +141,8 @@
             <!-- /.box-header -->
             <div class="box-body no-padding">
               <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
+              <div id="calendar" style="width: 100%">
+              </div>
             </div>
             <!-- /.box-body -->
             <div class="box-footer text-black">
@@ -204,7 +209,8 @@
               </h3>
             </div>
             <div class="box-body">
-              <div id="world-map" style="height: 250px; width: 100%;"></div>
+              <div id="world-map" style="height: 250px; width: 100%;">
+              </div>
             </div>
             <!-- /.box-body-->
             <div class="box-footer no-border">
@@ -233,4 +239,12 @@
       </div>
     </section>
   </div>
+</block>
+
+<block name="bottomJs">
+  <!-- Morris.js charts -->
+  <script src="/1fengou/Public/AdminLTE/plugins/morris/morris.min.js"></script>
+  AdminLTE dashboard demo (This is only for demo purposes)
+  <script src="/1fengou/Public/AdminLTE/dist/js/pages/dashboard.js"></script>
+  <script src="/1fengou/Public/js/raphael-2.1.0/raphael-min.js"></script>
 </block>

@@ -9,19 +9,40 @@ namespace Home\Controller;
 use Think\Controller;
 class ManageController extends Controller
 {
+
     //列表查询
-    public function index($page=null,$pageCount=10){
+    public function index($pageCount=10)
+    {
         $User = M('Product');
-        if($page==null){
-            $data = $User->select();
-        }
-        else{
-            $data = $User->page($page,$pageCount)->select();
-            $this->assign('page',$page);
-            $this->assign('pageCount',$pageCount);
-        }
-        $this->assign('productList',$data);
+        //分页参数计算
+        $total = $User->count();//数据总数
+        $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
+        $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
+        $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
+
+        //分页插件
+        $page = new \Think\Page($total, $pageCount, I('get.'));
+        $p = $page->show();
+
+        //分页参数赋值
+        $this->assign('_page', $p ? $p : '');
+        $this->assign('total', $User->count());
+        $this->assign('pageCount', $pageCount);
+        $this->assign('page', $currentPage);
+        $this->assign('from', $from);
+        $this->assign('to', $to);
+
+        //查询数据
+        $data = $User->page(I('get.p'))->select();
+
+        //查询数据赋值
+        $this->assign('productList', $data);
+
         $this->display('Index:manageProduct');
+
+
+
+
     }
 
     //图片上传
@@ -105,16 +126,14 @@ class ManageController extends Controller
     public function editProduct(){
         if(I('id') == null){
             //新增商品
+            $this->assign('editType','create');
             $this->display('Index:editProduct');
         }else{
             //更新商品
             $data = $this->queryProductById(I('id'));
+            $this->assign('editType','update');
             $this->assign('productList', $data);
             $this->display('Index:editProduct');
         }
     }
-
-
-
-
 }

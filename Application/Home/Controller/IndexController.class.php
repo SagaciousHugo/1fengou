@@ -2,7 +2,6 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-
     public function index($page=null,$pageCount=10){
         $User = M('Product');
         if($page==null){

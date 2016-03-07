@@ -27,7 +27,7 @@
                 var perPage = $("#showPerPage").val();
                 $.ajax({
                     type:"GET",
-                    url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + {$page} + "/pageCount/" + perPage,
+                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/" + {$page} + "/pageCount/" + perPage,
                     success:function(data){
                         $("#manageTable").html(data);
                     }
@@ -180,13 +180,6 @@
                                         <include file="Index/manageTable"/>
                                     </div>
 
-                                    <!--显示分页插件-->
-                                    <div class="row">
-                                        <div class="col-lg-7">
-                                            <div id="pageNav" class="dataTables_paginate paging_simple_numbers">
-                                            </div>
-                                        </div>
-                                    </div>
 
                                 </div>
 

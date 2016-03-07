@@ -83,14 +83,14 @@
                 var perPage = $("#showPerPage").val();
                 $.ajax({
                     type:"GET",
-                    url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + <?php echo ($page); ?> + "/pageCount/" + perPage,
+                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/" + <?php echo ($page); ?> + "/pageCount/" + perPage,
                     success:function(data){
                         $("#manageTable").html(data);
-                        var total = $('#hideTotalPage').val();
+/*                        var total = $('#hideTotalPage').val();
                         PageClick = function(pageclicknumber){
-                            /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+ /!*                           /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                             $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
-                            var perPage2 = $("#showPerPage").val();
+                            var perPage2 = $("#showPerPage").val();*!/
                             $.ajax({
                                 type:"GET",
                                 url: "http://localhost/1fengou/index.php/home/Manage/index/page/" + (<?php echo ($page); ?> + 1) + "/pageCount/" + perPage2,
@@ -98,22 +98,22 @@
                                     $("#manageTable").html(data);
                                     var total = $('#hideTotalPage').val();
                                     PageClick = function(pageclicknumber){
-                                        /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                                        /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                                         $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
                                     }
-                                    /*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                                    /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                                     $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
                                 }
                             })
                         }
-                        /*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
-                        $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
+                        /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
+                        $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});*/
                     }
                 });
             })
 
-            PageClick = function(pageclicknumber){
-                /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:<?php echo ($totalPages); ?>,countPerPage:perPage2,buttonClickCallback:PageClick});*/
+           /* PageClick = function(pageclicknumber){
+                /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:<?php echo ($totalPages); ?>,countPerPage:perPage2,buttonClickCallback:PageClick});*!/
                 $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:<?php echo ($totalPages); ?>,buttonClickCallback:PageClick});
                 var perPage2 = $("#showPerPage").val();
                 $.ajax({
@@ -123,17 +123,17 @@
                         $("#manageTable").html(data);
                         var total = $('#hideTotalPage').val();
                         PageClick = function(pageclicknumber){
-                            /*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                            /!*$('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                             $('#pageNav').pager({pagenumber:pageclicknumber,pagecount:total,buttonClickCallback:PageClick});
                         }
-                        /*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*/
+                        /!*$('#pageNav').pager({pagenumber:1,pagecount:total,countPerPage:perPage,buttonClickCallback:PageClick});*!/
                         $('#pageNav').pager({pagenumber:1,pagecount:total,buttonClickCallback:PageClick});
                     }
                 })
             }
 
             /*$('#pageNav').pager({pagenumber:1,pagecount:<?php echo ($totalPages); ?>,countPerPage:perPage2,buttonClickCallback:PageClick});*/
-            $('#pageNav').pager({pagenumber:1,pagecount:<?php echo ($totalPages); ?>,buttonClickCallback:PageClick});
+            /*$('#pageNav').pager({pagenumber:1,pagecount:<?php echo ($totalPages); ?>,buttonClickCallback:PageClick});*/
 
 
         });
@@ -537,7 +537,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Manage/index">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index/type/woshimingming"">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>
@@ -764,18 +764,15 @@
             <input id="hideTotalPage" style="display: none" value="<?php echo ($totalPages); ?>" />
         </div>
     </div>
+    <!-- 分页 -->
+    <div class="page">
+        <?php echo ($_page); ?>
+    </div>
 </div>
 
 
                                     </div>
 
-                                    <!--显示分页插件-->
-                                    <div class="row">
-                                        <div class="col-lg-7">
-                                            <div id="pageNav" class="dataTables_paginate paging_simple_numbers">
-                                            </div>
-                                        </div>
-                                    </div>
 
                                 </div>
 

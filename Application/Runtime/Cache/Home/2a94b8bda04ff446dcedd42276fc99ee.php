@@ -545,6 +545,10 @@
                   <a href="#" class="btn btn-success btn-lg btn-sm active" role="button">加入购物车</a>
                 </div>
                 <br/><?php endforeach; endif; else: echo "" ;endif; ?>
+              <!-- 分页 -->
+              <div class="page">
+                <?php echo ($_page); ?>
+              </div>
             </div>
           </div>
         </section>

@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c9173cec-c4ea-4041-b597-64e1c908d58b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/editProduct.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/editProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3c5bfb19904e0772601387a32463ad93.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3c5bfb19904e0772601387a32463ad93.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/7fe04e96397bd97adc8ac8c2506de1ec.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/7fe04e96397bd97adc8ac8c2506de1ec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f2ed2d116ee9faa6b5ea1d732a76329f.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f2ed2d116ee9faa6b5ea1d732a76329f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Common/16_03_07.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/16_03_07.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_07.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_03_07.log" />
     </list>
     <ignored path="thinkphp3.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -436,7 +430,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457358479806</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="queryProductById">
+      <created>1457361146873</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1457361146873</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">

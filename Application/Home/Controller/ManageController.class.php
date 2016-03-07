@@ -62,6 +62,12 @@ class ManageController extends Controller
         }
     }
 
+    //根据id查询单个商品信息
+    public function queryProductById($id){
+        $User = M('Product');
+        return  $User->find($id);
+    }
+
     //图片上传
     public function uploadImages()
     {
@@ -91,25 +97,25 @@ class ManageController extends Controller
         if($params['id'] == null){
             //新增商品
             if(!$User->create($params,1)) {
-                $this->redirect('Manage/editProduct','','5',$User->getError().'，请重新创建商品...');
+                $this->redirect('Manage/editProduct','','2',$User->getError().'，请重新创建商品...');
             }else {
                 $id = $User->add();
                 if($id === false) {
-                    $this->redirect('Manage/editProduct','','5',$User->getError().'，请重新创建商品...');
+                    $this->redirect('Manage/editProduct','','2',$User->getError().'，请重新创建商品...');
                 }else {
-                    $this->redirect('Index/index','','5','新增商品成功，返回首页...');
+                    $this->redirect('Index/index','','2','新增商品成功，返回首页...');
                 }
             }
         }else{
             //更新商品
             if(!$User->create($param,2)) {
-                $this->redirect('Manage/editProduct','id='.$params['id'],'5',$User->getError().'，请重新修改本商品...');
+                $this->redirect('Manage/editProduct','id='.$params['id'],'2',$User->getError().'，请重新修改本商品...');
             }else {
                 $id = $User->save();
                 if($id === false) {
-                    $this->redirect('Manage/editProduct','id='.$params['id'],'5',$User->getError().'，请重新修改本商品...');
+                    $this->redirect('Manage/editProduct','id='.$params['id'],'2',$User->getError().'，请重新修改本商品...');
                 }else {
-                    $this->redirect('Manage/index','','5','商品信息修改成功，返回商品管理页面...');
+                    $this->redirect('Manage/index','','2','商品信息修改成功，返回商品管理页面...');
                 }
             }
         }

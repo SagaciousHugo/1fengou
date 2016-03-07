@@ -4,27 +4,28 @@
         <thead>
             <tr>
                 <th>
-                    <input type="checkbox" id="selectAll"/>全选
+                    <input type="checkbox" id="selectAll" class="inputSelect"/>
+                    全选
                 </th>
-                <th>
+                <th class="tableHead">
                     商品ID
                 </th>
-                <th>
+                <th class="tableHead">
                     商品名称
                 </th>
-                <th>
+                <th class="tableHead">
                     商品价格(￥)
                 </th>
-                <th>
+                <th class="tableHead">
                     商品简介
                 </th>
-                <th>
+                <th class="tableHead">
                     已售数量
                 </th>
-                <th>
+                <th class="tableHead">
                     商品缩略图
                 </th>
-                <th>
+                <th class="tableHead">
                     操作
                 </th>
             </tr>
@@ -66,13 +67,13 @@
                 <th>
                     <input type="checkbox" id="selectAll2"/>全选
                 </th>
-                <th>商品ID</th>
-                <th>商品名称</th>
-                <th>商品价格(￥)</th>
-                <th>商品简介</th>
-                <th>已售数量</th>
-                <th>商品缩略图</th>
-                <th>操作</th>
+                <th class="tableHead">商品ID</th>
+                <th class="tableHead">商品名称</th>
+                <th class="tableHead">商品价格(￥)</th>
+                <th class="tableHead">商品简介</th>
+                <th class="tableHead">已售数量</th>
+                <th class="tableHead">商品缩略图</th>
+                <th class="tableHead">操作</th>
             </tr>
         </tfoot>
     </table>
@@ -82,7 +83,7 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="dataTables_info" id="nav_info" role="status" aria-live="polite">
-            当前显示：第<?php echo ($from); ?>至<?php echo ($to); ?>条数据，共<?php echo ($total); ?>条数据
+            当前显示：第 <?php echo ($from); ?> 至 <?php echo ($to); ?> 条数据，共 <?php echo ($total); ?> 条数据
             <input id="hideTotalPage" style="display: none" value="<?php echo ($totalPages); ?>" />
         </div>
     </div>

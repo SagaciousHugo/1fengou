@@ -33,7 +33,7 @@
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/common.css">
         <!-- pager css -->
-        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/pager.css">
+        <link rel="stylesheet" type="text/css" href="/1fengou/Public/css/page.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -368,7 +368,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Manage/index/type/woshimingming"">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>

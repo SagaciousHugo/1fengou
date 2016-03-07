@@ -7,7 +7,7 @@
                     <input type="checkbox" id="selectAll"/>全选
                 </th>
                 <th>
-                    商品Id
+                    商品ID
                 </th>
                 <th>
                     商品名称
@@ -66,7 +66,7 @@
                 <th>
                     <input type="checkbox" id="selectAll2"/>全选
                 </th>
-                <th>商品Id</th>
+                <th>商品ID</th>
                 <th>商品名称</th>
                 <th>商品价格(￥)</th>
                 <th>商品简介</th>
@@ -81,7 +81,7 @@
 <!--表格底部-->
 <div class="row">
     <div class="col-lg-12">
-        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">
+        <div class="dataTables_info" id="nav_info" role="status" aria-live="polite">
             当前显示：第<?php echo ($from); ?>至<?php echo ($to); ?>条数据，共<?php echo ($total); ?>条数据
             <input id="hideTotalPage" style="display: none" value="<?php echo ($totalPages); ?>" />
         </div>

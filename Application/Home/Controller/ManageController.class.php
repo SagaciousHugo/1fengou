@@ -10,37 +10,64 @@ use Think\Controller;
 class ManageController extends Controller
 {
 
-    //列表查询
-    public function index($type=null,$pageCount=10)
+    //列表查询:包括-每页显示数量变化的查询，分页查询，按商品id搜索查询
+    public function index($type=null,$pageCount=10,$id=null)
     {
         $User = M('Product');
-        //分页参数计算
-        $total = $User->count();//数据总数
-        $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
-        $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
-        $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
-        //分页插件
-        $page = new \Think\Page($total,$pageCount, I('get.'));
-        $p = $page->show();
+        if($id == null){
+            //分页参数计算
+            $total = $User->count();//数据总数
+            $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
+            $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
+            $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
+            //分页插件
+            $page = new \Think\Page($total,$pageCount, I('get.'));
 
-        //分页参数赋值
-        $this->assign('_page', $p ? $p : '');
-        $this->assign('total', $User->count());
-        $this->assign('pageCount', $pageCount);
-        $this->assign('page', $currentPage);
-        $this->assign('from', $from);
-        $this->assign('to', $to);
 
-        //查询数据
-        $data = $User->page($currentPage, $pageCount)->select();
 
-        //查询数据赋值
-        $this->assign('productList', $data);
-        if (type != null) {
-        $this->display('Index:manageProduct');
-        }else{
-        $this->display('Index:manageTable');
-         }
+            $p = $page->show();
+/*            $P->setConfig('header','个会员');
+            $P->setConfig('prev','ggg');*/
+            //查询数据
+            $data = $User->page($currentPage, $pageCount)->select();
+            //查询数据赋值
+            $this->assign('productList', $data);
+            //分页参数赋值
+            $this->assign('_page', $p ? $p : '');
+            $this->assign('total', $total);
+            $this->assign('pageCount', $pageCount);
+            $this->assign('page', $currentPage);
+            $this->assign('from', $from);
+            $this->assign('to', $to);
+            if ($type == null) {
+                $this->display('Index:manageProduct');
+            }else{
+                $this->display('Index:manageTable');
+            }
+        } else {
+            $total = count($User->where('id=%d',array($id))->select());//数据总数
+            $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
+            $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
+            $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
+            //分页插件
+            $page = new \Think\Page($total,$pageCount, I('get.'));
+
+            $p = $page->show();
+/*            $P->setConfig('header','个会员');
+            $P->setConfig('prev','ggg');*/
+            //查询数据
+            $data = $User->where('id=%d',array($id))->select();
+            //查询数据赋值
+            $this->assign('productList',$data);
+            //分页参数赋值
+            $this->assign('_page', $p ? $p : '');
+            $this->assign('total', $total);
+            $this->assign('pageCount', $pageCount);
+            $this->assign('page', $currentPage);
+            $this->assign('from', $from);
+            $this->assign('to', $to);
+            $this->display('Index:manageTable');
+        }
     }
 
     //图片上传
@@ -62,12 +89,6 @@ class ManageController extends Controller
             $data['thumbnail'] = "Resources/Images" . $info['savepath'] . $info['savename'];
             return $data;
         }
-    }
-    //根据id查询单个商品信息
-    public function queryProductById($id){
-        $User = M('Product');
-        $this->assign('productList',$User->where('id=%d',array($id))->select());
-        $this->display('Index:manageTable');
     }
 
     //保存商品信息（创建，更新）

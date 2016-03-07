@@ -368,7 +368,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost/1fengou/index.php/home/Manage/index">
+                <a href="http://localhost/1fengou/index.php/home/Manage/index/type/woshimingming"">
                     <i class="fa fa-th"></i> <span>管理商品</span>
                     <small class="label pull-right bg-green">new</small>
                 </a>

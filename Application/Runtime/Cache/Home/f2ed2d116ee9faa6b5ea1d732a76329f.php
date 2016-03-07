@@ -206,6 +206,23 @@
 
             /*rd.prop('checked',!(this.checked));*/
         }
+
+        function productSearch(){
+            var serContent = $("#query").val();
+            if(serContent != ""){
+                $.ajax({
+                    type:"GET",
+                    url : "http://localhost/1fengou/index.php/home/Manage/queryProductById/id/" +  serContent ,
+                    success:function(data){
+                        $("#manageTable").html(data);
+                    }
+                })
+            } else {
+                $('#serContent').modal('show');
+            }
+
+
+        }
     </script>
 
     </head>
@@ -643,13 +660,15 @@
 
                                         <div class="col-lg-4">
                                             <div id="example1_filter" class="dataTables_filter">
-                                                <label>查询商品名称:
-                                                    <input type="search" class="form-control input-sm" placeholder="" aria-controls="example1">
+                                                <label>查询商品Id:
+                                                    <input id="query" type="search" class="form-control input-sm" placeholder="" aria-controls="example1">
+                                                    <a class="btn btn-primary btn-lg btn-sm active" role="button" href="javascript:productSearch()">查询</a>
                                                 </label>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
+                                            <label>操作选项：</label>
                                             <a class="btn btn-danger btn-lg btn-sm active" role="button" href="javascript:selectCount()">批量删除</a>
                                             <!--data-toggle="modal" data-target="#deleteConfirm"-->
                                         </div>
@@ -878,6 +897,33 @@
             </div>
         </div>
     </div>
+
+    <!-- （Modal）用于搜索时请输入内容提示 -->
+    <div class="modal fade" id="serContent" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        操作提示
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    请输入搜索内容!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        确认
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
             <!--引入底部footer模板-->

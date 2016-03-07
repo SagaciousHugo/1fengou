@@ -20,7 +20,6 @@ class ManageController extends Controller
             $this->assign('productList',$data);
             $this->assign('total',$User->count());
             $this->assign('totalPages',ceil($User->count()/10));
-            $this->assign('lala',ceil(($User->count())/10));
             $this->assign('from',1);
             $this->assign('to',10);
             $this->display('Index:manageProduct');
@@ -71,7 +70,8 @@ class ManageController extends Controller
     //根据id查询单个商品信息
     public function queryProductById($id){
         $User = M('Product');
-        return  $User->find($id);
+        $this->assign('productList',$User->where('id=%d',array($id))->select());
+        $this->display('Index:manageTable');
     }
 
     //保存商品信息（创建，更新）

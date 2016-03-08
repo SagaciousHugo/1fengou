@@ -9,20 +9,19 @@ namespace Home\Controller;
 use Think\Controller;
 class ManageController extends Controller
 {
-
     //列表查询:包括-每页显示数量变化的查询，分页查询，按商品id搜索查询
     public function index($type=null,$pageCount=10)
     {
         $currentPage = I('p') != null ? I('p') : 1;//当前要显示的页码
         //拼查询参数
         if(I('id')!=null){
-            $param['id'] = '%'.I('id').'%';
+            $param['id'] = 'like' + '%'.I('id').'%';
         }
         if(I('name')!=null){
-            $param['name'] = '%'.I('name').'%';
+            $param['name'] = array('like','%'.I('name').'%');
         }
         if(I('price')!=null){
-            $param['price'] = '%'.I('price').'%';
+            $param['price'] = array('like','%'.I('price').'%');
         }
         if(I('order')!=null){
             $param['order'] = I('order');
@@ -35,59 +34,11 @@ class ManageController extends Controller
         }else{
             $this->display('Index:manageTable');
         }
-
-      /*  $User = M('Product');
-        if($id == null){
-            //分页参数计算
-            $total = $User->count();//数据总数
-            $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
-            $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
-            $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
-            //分页插件
-            $page = new \Think\Page($total,$pageCount, I('get.'));
-            $p = $page->show();
-            //查询数据
-            $data = $User->page($currentPage, $pageCount)->select();
-            //查询数据赋值
-            $this->assign('productList', $data);
-            //分页参数赋值
-            $this->assign('_page', $p ? $p : '');
-            $this->assign('total', $total);
-            $this->assign('pageCount', $pageCount);
-            $this->assign('page', $currentPage);
-            $this->assign('from', $from);
-            $this->assign('to', $to);
-            if ($type == null) {
-                $this->display('Index:manageProduct');
-            }else{
-                $this->display('Index:manageTable');
-            }
-        } else {
-            $total = count($User->where('id=%d',array($id))->select());//数据总数
-            $currentPage = I('get.p') != null ? I('get.p') : 1;//当前要显示的页码
-            $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
-            $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
-            //分页插件
-            $page = new \Think\Page($total,$pageCount, I('get.'));
-            $p = $page->show();
-            //查询数据
-            $data = $User->where('id=%d',array($id))->select();
-            //查询数据赋值
-            $this->assign('productList',$data);
-            //分页参数赋值
-            $this->assign('_page', $p ? $p : '');
-            $this->assign('total', $total);
-            $this->assign('pageCount', $pageCount);
-            $this->assign('page', $currentPage);
-            $this->assign('from', $from);
-            $this->assign('to', $to);
-            $this->display('Index:manageTable');
-        }*/
     }
 
     public function queryProduct($params,$currentPage,$pageCount){
         $User = M('Product');
-        $param['1'] = '1';//补充无效查询条件，防止查询条件为空时错误
+        $params['1'] = '1';//补充无效查询条件，防止查询条件为空时错误
         //分页参数
         $total = count($User->where($params)->select());//数据总数
         $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
@@ -97,7 +48,6 @@ class ManageController extends Controller
         $p = $page->show();
         //查询数据
         $data = $User->where($params)->page($currentPage, $pageCount)->select();
-
         //查询数据赋值
         $this->assign('productList',$data);
         //分页参数赋值
@@ -129,7 +79,6 @@ class ManageController extends Controller
         if (!$info) {// 上传错误提示错误信息
             $data['status'] = 'error22';
             $data['message'] = $upload->getError();
-            /*dump($data['message']);*/
             return $data;
         } else {// 上传成功 获取上传文件信息
             $data['status'] = 'success';
@@ -169,7 +118,6 @@ class ManageController extends Controller
                     }
                 }
             }else{
-                dump($params);
                 //更新商品
                 if(!$User->create($params,2)) {
                     $data['status'] = 'error55';

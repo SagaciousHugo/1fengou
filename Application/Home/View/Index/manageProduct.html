@@ -107,7 +107,7 @@
             if(serContent != ""){
                 $.ajax({
                     type:"GET",
-                    url : "http://localhost/1fengou/index.php/home/Manage/index/id/" +  serContent ,
+                    url : "http://localhost/1fengou/index.php/home/Manage/index/type/search/id/" +  serContent ,
                     success:function(data){
                         $("#manageTable").html(data);
                     }

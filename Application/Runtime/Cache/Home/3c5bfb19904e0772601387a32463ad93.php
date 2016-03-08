@@ -80,9 +80,9 @@
                 // 获取File引用:
                 var file = fileInput.files[0];
                 // 获取File信息:
-                info.innerHTML = '缩略图信息' + '<br>' + '文件: ' + file.name + '<br>' +
-                        '大小: ' + file.size + '<br>' +
-                        '修改: ' + file.lastModifiedDate;
+                info.innerHTML = '<b>缩略图信息</b>' + '<br>' + '<b>文件名</b>: ' + file.name + '&nbsp;&nbsp;&nbsp;&nbsp;' +
+                        '<b>文件大小</b>: ' + (file.size/1024).toFixed(2) + ' KB' + '&nbsp;&nbsp;&nbsp;&nbsp;' +
+                        '<b>最后修改日期</b>: ' + file.lastModifiedDate;
                 if (file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/gif') {
                     alert('不是有效的图片文件!');
                     return;
@@ -99,10 +99,13 @@
         });
 
         function createProduct(){
+            var formData = new FormData($("#commentForm")[0]);
             $.ajax({
                type : "POST",
                 url : "http://localhost/1fengou/index.php/home/Manage/saveProduct",
-                data: $('#commentForm').serialize(),
+                data: formData,
+                processData: false,   // 告诉jQuery不要去处理发送的数据
+                contentType: false,   // 告诉jQuery不要去设置Content-Type请求头
                 success : function($data){
                     if($data.status == 'error') {
                         $('#opFail').modal({
@@ -529,7 +532,8 @@
         </section>
 
         <section class="content">
-                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
+                        <!--<form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >-->
+            <form id="commentForm" action="javascript:createProduct()" enctype="multipart/form-data" method="post" >
                             <!--/1fengou/index.php/Home/Manage/saveProduct-->
                             <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="<?php echo ($productList['id']); ?>" style="display:none"/>
@@ -568,10 +572,6 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!--                    <button type="button" class="close"
-                                                data-dismiss="modal" aria-hidden="true">
-                                            &times;
-                                        </button>-->
                     <h4 class="modal-title">
                         操作提示
                     </h4>
@@ -580,7 +580,7 @@
                     操作成功!
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="javascript:window.location.reload();" >
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="javascript:window.location.href='http://localhost/1fengou/index.php/home/Manage/index'" >
                         确认
                     </button>
                 </div>

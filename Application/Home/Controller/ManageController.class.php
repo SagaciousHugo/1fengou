@@ -11,9 +11,32 @@ class ManageController extends Controller
 {
 
     //列表查询:包括-每页显示数量变化的查询，分页查询，按商品id搜索查询
-    public function index($type=null,$pageCount=10,$id=null)
+    public function index($type=null,$pageCount=10)
     {
-        $User = M('Product');
+        $currentPage = I('p') != null ? I('p') : 1;//当前要显示的页码
+        //拼查询参数
+        if(I('id')!=null){
+            $param['id'] = '%'.I('id').'%';
+        }
+        if(I('name')!=null){
+            $param['name'] = '%'.I('name').'%';
+        }
+        if(I('price')!=null){
+            $param['price'] = '%'.I('price').'%';
+        }
+        if(I('order')!=null){
+            $param['order'] = I('order');
+        }
+        //查询数据
+        $this->queryProduct($param,$currentPage,$pageCount);
+
+        if ($type == null) {
+            $this->display('Index:manageProduct');
+        }else{
+            $this->display('Index:manageTable');
+        }
+
+      /*  $User = M('Product');
         if($id == null){
             //分页参数计算
             $total = $User->count();//数据总数
@@ -59,7 +82,32 @@ class ManageController extends Controller
             $this->assign('from', $from);
             $this->assign('to', $to);
             $this->display('Index:manageTable');
-        }
+        }*/
+    }
+
+    public function queryProduct($params,$currentPage,$pageCount){
+        $User = M('Product');
+        $param['1'] = '1';//补充无效查询条件，防止查询条件为空时错误
+        //分页参数
+        $total = count($User->where($params)->select());//数据总数
+        $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
+        $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
+        //分页插件
+        $page = new \Think\Page($total,$pageCount);
+        $p = $page->show();
+        //查询数据
+        $data = $User->where($params)->page($currentPage, $pageCount)->select();
+
+        //查询数据赋值
+        $this->assign('productList',$data);
+        //分页参数赋值
+        $this->assign('_page', $p ? $p : '');
+        $this->assign('total', $total);
+        $this->assign('pageCount', $pageCount);
+        $this->assign('page', $currentPage);
+        $this->assign('from', $from);
+        $this->assign('to', $to);
+
     }
 
     //根据id查询单个商品信息

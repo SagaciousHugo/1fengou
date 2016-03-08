@@ -82,7 +82,7 @@
                 var perPage = $("#showPerPage").val();
                 $.ajax({
                     type:"GET",
-                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/" + '1' + "/pageCount/" + perPage + "/type/ajax",
+                    url: "http://localhost/1fengou/index.php/home/Manage/index/p/1/pageCount/" + perPage + "/type/ajax",
                     success:function(data){
                         $("#manageTable").html(data);
                     }

@@ -100,11 +100,21 @@
 
         function createProduct(){
             $.ajax({
-               type : "GET",
-                url : "http://localhost/1fengou/index.php/home/Manage/uploadImages",
+               type : "POST",
+                url : "http://localhost/1fengou/index.php/home/Manage/saveProduct",
+                data: $('#commentForm').serialize(),
                 success : function($data){
-                    if($data.status == 'success') {
-
+                    if($data.status == 'error') {
+                        $('#opFail').modal({
+                            show: true,
+                            backdrop: 'static'
+                        });
+                        alert($data.message);
+                    } else{
+                        $('#opSuccess').modal({
+                            show: true,
+                            backdrop: 'static'
+                        });
                     }
                 }
             });
@@ -520,7 +530,7 @@
         </section>
 
         <section class="content">
-                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
+                        <form id="commentForm" action="javascript:createProduct()" enctype="multipart/form-data" method="post" >
                             <!--/1fengou/index.php/Home/Manage/saveProduct-->
                             <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="<?php echo ($productList['id']); ?>" style="display:none"/>
@@ -543,14 +553,66 @@
                             <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
                             </div>
                             <div>
-                                <input type="file" id="test-image-file" name="photo" class="active" />
+                                <input type="file" id="test-image-file" name="photo1" class="active" />
                             </div>
                             <div id="test-file-info">
                             </div>
-                            <!--<input type="submit" value="提交" class="btn btn-success btn-lg active">-->
-                            <button type="submit" class="btn btn-success">提交</button>
+                            <input type="submit" value="提交" class="btn btn-success btn-lg active" />
+                            <!--<button type="submit" class="btn btn-success">提交</button>-->
                         </form>
         </section>
+    </div>
+
+    <!-- （Modal）用于操作成功提示 -->
+    <div class="modal fade" id="opSuccess" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--                    <button type="button" class="close"
+                                                data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>-->
+                    <h4 class="modal-title">
+                        操作提示
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    操作成功!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="javascript:window.location.reload();" >
+                        确认
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- （Modal）用于操作失败提示 -->
+    <div class="modal fade" id="opFail" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        操作提示
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    操作失败，数据错误，请联系管理员!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        确认
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
 

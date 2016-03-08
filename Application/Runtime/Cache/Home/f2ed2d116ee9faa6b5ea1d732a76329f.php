@@ -611,7 +611,7 @@
                                                         <option value="10"  <?php echo ($pageCount==10?'selected':''); ?>>10</option>
                                                         <option value="25"  <?php echo ($pageCount==25?'selected':''); ?>>25</option>
                                                         <option value="50"  <?php echo ($pageCount==50?'selected':''); ?>>50</option>
-                                                        <option value="100"  <?php echo ($pageCount==100?'selected':''); ?>>100</option>
+                                                        <option value="100" <?php echo ($pageCount==100?'selected':''); ?>>100</option>
                                                     </select> 条数据
                                                 </label>
                                             </div>

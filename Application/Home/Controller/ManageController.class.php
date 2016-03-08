@@ -168,7 +168,7 @@ class ManageController extends Controller
                 }
             }else{
                 //更新商品
-                if(!$User->create($param,2)) {
+                if(!$User->create($params,2)) {
                     $data['status'] = 'error';
                     $data['message'] = '更新商品失败！';
                     $this->ajaxReturn($data);

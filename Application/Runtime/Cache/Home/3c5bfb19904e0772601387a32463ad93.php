@@ -109,7 +109,6 @@
                             show: true,
                             backdrop: 'static'
                         });
-                        alert($data.message);
                     } else{
                         $('#opSuccess').modal({
                             show: true,
@@ -530,7 +529,7 @@
         </section>
 
         <section class="content">
-                        <form id="commentForm" action="javascript:createProduct()" enctype="multipart/form-data" method="post" >
+                        <form id="commentForm" action="http://localhost/1fengou/index.php/home/Manage/saveProduct" enctype="multipart/form-data" method="post" >
                             <!--/1fengou/index.php/Home/Manage/saveProduct-->
                             <div>
                                 <input id="shangpinid" name="id" minlength="2" type="text" class="form-control"  value="<?php echo ($productList['id']); ?>" style="display:none"/>
@@ -553,12 +552,12 @@
                             <div id="test-image-preview" style="border: 1px solid black; width: 50%; height: 200px;background-repeat:no-repeat;">
                             </div>
                             <div>
-                                <input type="file" id="test-image-file" name="photo1" class="active" />
+                                <input type="file" id="test-image-file" name="photo" class="active" />
                             </div>
                             <div id="test-file-info">
                             </div>
-                            <input type="submit" value="提交" class="btn btn-success btn-lg active" />
-                            <!--<button type="submit" class="btn btn-success">提交</button>-->
+                            <!--<input type="submit" value="提交" class="btn btn-success btn-lg active" />-->
+                            <button type="submit" class="btn btn-success">提交</button>
                         </form>
         </section>
     </div>

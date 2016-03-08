@@ -11,9 +11,32 @@ class ManageController extends Controller
 {
 
     //列表查询:包括-每页显示数量变化的查询，分页查询，按商品id搜索查询
-    public function index($type=null,$pageCount=10,$id=null)
+    public function index($type=null,$pageCount=10)
     {
-        $User = M('Product');
+        $currentPage = I('p') != null ? I('p') : 1;//当前要显示的页码
+        //拼查询参数
+        if(I('id')!=null){
+            $param['id'] = '%'.I('id').'%';
+        }
+        if(I('name')!=null){
+            $param['name'] = '%'.I('name').'%';
+        }
+        if(I('price')!=null){
+            $param['price'] = '%'.I('price').'%';
+        }
+        if(I('order')!=null){
+            $param['order'] = I('order');
+        }
+        //查询数据
+        $this->queryProduct($param,$currentPage,$pageCount);
+
+        if ($type == null) {
+            $this->display('Index:manageProduct');
+        }else{
+            $this->display('Index:manageTable');
+        }
+
+      /*  $User = M('Product');
         if($id == null){
             //分页参数计算
             $total = $User->count();//数据总数
@@ -59,7 +82,32 @@ class ManageController extends Controller
             $this->assign('from', $from);
             $this->assign('to', $to);
             $this->display('Index:manageTable');
-        }
+        }*/
+    }
+
+    public function queryProduct($params,$currentPage,$pageCount){
+        $User = M('Product');
+        $param['1'] = '1';//补充无效查询条件，防止查询条件为空时错误
+        //分页参数
+        $total = count($User->where($params)->select());//数据总数
+        $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
+        $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
+        //分页插件
+        $page = new \Think\Page($total,$pageCount);
+        $p = $page->show();
+        //查询数据
+        $data = $User->where($params)->page($currentPage, $pageCount)->select();
+
+        //查询数据赋值
+        $this->assign('productList',$data);
+        //分页参数赋值
+        $this->assign('_page', $p ? $p : '');
+        $this->assign('total', $total);
+        $this->assign('pageCount', $pageCount);
+        $this->assign('page', $currentPage);
+        $this->assign('from', $from);
+        $this->assign('to', $to);
+
     }
 
     //根据id查询单个商品信息
@@ -74,14 +122,14 @@ class ManageController extends Controller
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 3145728;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-        $upload->rootPath = '/1fengou/Public/Resources/Images'; // 设置附件上传根目录
+        $upload->rootPath = './Public/Resources/Images'; // 设置附件上传根目录
         $upload->savePath = ''; // 设置附件上传（子）目录
         // 上传文件
-        $info = $upload->upload($_FILES['photo1']);
+        $info = $upload->uploadOne($_FILES['photo']);
         if (!$info) {// 上传错误提示错误信息
-            $data['status'] = 'error';
+            $data['status'] = 'error22';
             $data['message'] = $upload->getError();
-            dump($data['message']);
+            /*dump($data['message']);*/
             return $data;
         } else {// 上传成功 获取上传文件信息
             $data['status'] = 'success';
@@ -94,9 +142,10 @@ class ManageController extends Controller
     public function saveProduct(){
         $User = D('Product');
         $params = I('post.');
+
         $uploadResult = $this->uploadImages();
-        if($uploadResult[status]=='error'){
-            $data['status'] = 'error';
+        if($uploadResult[status]=='error11'){
+            $data['status'] = 'error77';
             $data['message'] = '图片上传失败！';
             $this->ajaxReturn($data);
         }else{
@@ -104,13 +153,13 @@ class ManageController extends Controller
             if($params['id'] == null){
                 //新增商品
                 if(!$User->create($params,1)) {
-                    $data['status'] = 'error';
+                    $data['status'] = 'error33';
                     $data['message'] = '新增商品失败！';
                     $this->ajaxReturn($data);
                 }else {
                     $id = $User->add();
                     if($id === false) {
-                        $data['status'] = 'error';
+                        $data['status'] = 'error44';
                         $data['message'] =  '新增商品失败！';
                         $this->ajaxReturn($data);
                     }else {
@@ -120,15 +169,16 @@ class ManageController extends Controller
                     }
                 }
             }else{
+                dump($params);
                 //更新商品
                 if(!$User->create($params,2)) {
-                    $data['status'] = 'error';
-                    $data['message'] = '更新商品失败！';
+                    $data['status'] = 'error55';
+                    $data['message'] = '更新商品失败！gggg';
                     $this->ajaxReturn($data);
                 }else {
                     $id = $User->save();
                     if($id === false) {
-                        $data['status'] = 'error';
+                        $data['status'] = 'error66';
                         $data['message'] =  '更新商品失败！';
                         $this->ajaxReturn($data);
                     }else {

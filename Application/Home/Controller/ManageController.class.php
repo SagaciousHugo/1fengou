@@ -16,12 +16,15 @@ class ManageController extends Controller
         //拼查询参数
         if(I('id')!=null){
             $param['id'] = 'like' + '%'.I('id').'%';
+            $this->assign('id',I('id'));
         }
         if(I('name')!=null){
             $param['name'] = array('like','%'.I('name').'%');
+            $this->assign('name',I('name'));
         }
         if(I('price')!=null){
             $param['price'] = array('like','%'.I('price').'%');
+            $this->assign('price',I('price'));
         }
         if(I('order')!=null){
             $param['order'] = I('order');
@@ -29,11 +32,11 @@ class ManageController extends Controller
         //查询数据
         $this->queryProduct($param,$currentPage,$pageCount);
 
-        if ($type == null) {
+      //  if ($type == null) {
             $this->display('Index:manageProduct');
-        }else{
+       /* }else{
             $this->display('Index:manageTable');
-        }
+        }*/
     }
 
     public function queryProduct($params,$currentPage,$pageCount){
@@ -44,6 +47,7 @@ class ManageController extends Controller
         $from = $total != 0 ? ($currentPage - 1) * $pageCount + 1 : 0;//起始数据编号
         $to = $currentPage * $pageCount < $total ? $currentPage * $pageCount : $total;//终止数据编号
         //分页插件
+
         $page = new \Think\Page($total,$pageCount);
         $p = $page->show();
         //查询数据

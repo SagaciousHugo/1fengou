@@ -88,3 +88,51 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
 ERR: 无法加载模块:Public
 
+[ 2016-03-08T20:53:21+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T21:07:07+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001529s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T21:08:17+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T21:11:15+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001474s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T21:11:49+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001596s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T23:04:47+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001288s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T23:05:11+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001407s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-08T23:05:17+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载模块:Public
+

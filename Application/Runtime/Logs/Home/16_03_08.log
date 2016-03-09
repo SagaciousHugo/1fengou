@@ -6481,3 +6481,1512 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006730s ]
 INFO: [ app_end ] --END-- [ RunTime:0.007224s ]
 
+[ 2016-03-08T20:53:20+08:00 ] ::1 /1fengou/index.php/home/index/index/type/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_product`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001743s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001945s ]
+NOTIC: [8] Undefined variable: _page D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 550 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001919s ]
+
+[ 2016-03-08T20:53:23+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 64 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 537 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 541 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 545 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 549 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2016-03-08T20:53:25+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000780s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 726 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002347s ]
+
+[ 2016-03-08T20:53:50+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000586s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 726 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2016-03-08T20:54:38+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000586s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 729 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001687s ]
+
+[ 2016-03-08T20:54:55+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001440s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 729 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2016-03-08T20:55:37+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000704s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 733 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2016-03-08T20:57:01+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000843s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 734 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2016-03-08T20:58:52+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000603s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000809s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2016-03-08T20:59:20+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000597s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000796s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002011s ]
+
+[ 2016-03-08T21:01:28+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000812s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 751 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002471s ]
+
+[ 2016-03-08T21:03:07+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000611s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000808s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 743 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002199s ]
+
+[ 2016-03-08T21:03:59+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2016-03-08T21:04:10+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000815s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2016-03-08T21:04:46+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000611s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2016-03-08T21:05:05+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000601s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002508s ]
+
+[ 2016-03-08T21:05:22+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000626s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2016-03-08T21:05:43+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2016-03-08T21:07:07+08:00 ] ::1 /1fengou/index.php/home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8] Undefined variable: _page D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 550 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2016-03-08T21:07:10+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 64 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 537 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 541 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 545 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 549 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001544s ]
+
+[ 2016-03-08T21:07:11+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001506s ]
+
+[ 2016-03-08T21:07:42+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 743 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2016-03-08T21:08:17+08:00 ] ::1 /1fengou/index.php/home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000514s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Undefined variable: _page D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 550 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2016-03-08T21:08:20+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000605s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000807s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 744 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-03-08T21:08:31+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct/id/81
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 81 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2016-03-08T21:09:57+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000799s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2016-03-08T21:10:03+08:00 ] ::1 /1fengou/index.php/home/Manage/index/type/search/id/81
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 81 AND (  1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 81 AND (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2016-03-08T21:10:05+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/10/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2016-03-08T21:10:10+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/2/pageCount/10/type/ajax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 10,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001483s ]
+
+[ 2016-03-08T21:10:15+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 10,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000619s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001644s ]
+
+[ 2016-03-08T21:10:19+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 20,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000626s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001502s ]
+
+[ 2016-03-08T21:10:21+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 30,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2016-03-08T21:10:27+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000663s ]
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 64 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 537 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 541 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 545 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 549 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2016-03-08T21:10:28+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000664s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000885s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2016-03-08T21:10:32+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct/id/44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000692s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2016-03-08T21:10:42+08:00 ] ::1 /1fengou/index.php/home/Manage/saveProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\code\WampServer\wamp64\www\1fengou\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 96 行.
+NOTIC: [8] Undefined index: validate D:\code\WampServer\wamp64\www\1fengou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\code\WampServer\wamp64\www\1fengou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_product` SET `name`='product_2',`price`='9.9',`introduce`='introduce_4',`thumbnail`='Resources/Images2016-03-08/56decf520f625.png' WHERE `id` = 44 [ RunTime:0.0025s ]
+
+[ 2016-03-08T21:10:43+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002791s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001603s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004871s ]
+
+[ 2016-03-08T21:11:08+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/25/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002325s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002604s ]
+
+[ 2016-03-08T21:11:14+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/50/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,50   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002415s ]
+
+[ 2016-03-08T21:11:30+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/25/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002982s ]
+
+[ 2016-03-08T21:11:36+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/10/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002339s ]
+
+[ 2016-03-08T21:11:49+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/5/pageCount/10/type/ajax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002349s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 40,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002460s ]
+
+[ 2016-03-08T21:11:53+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002356s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 10,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000621s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000825s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003085s ]
+
+[ 2016-03-08T21:15:12+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 10,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000636s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 742 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2016-03-08T21:15:44+08:00 ] ::1 /1fengou/index.php/home/Manage/index/type/search/id/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 23 AND (  1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 23 AND (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2016-03-08T21:15:51+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/25/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2016-03-08T21:15:53+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/10/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2016-03-08T21:16:00+08:00 ] ::1 /1fengou/index.php/home/Manage/index/p/1/pageCount/10/type/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\7fe04e96397bd97adc8ac8c2506de1ec.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-03-08T21:36:01+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 64 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 537 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 541 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 545 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 549 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2016-03-08T21:36:55+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 64 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 537 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 541 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 545 行.
+NOTIC: [8] Undefined variable: productList D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\3c5bfb19904e0772601387a32463ad93.php 第 549 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2016-03-08T23:04:47+08:00 ] ::1 /1fengou/index.php/home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000517s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Undefined variable: _page D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 550 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001508s ]
+
+[ 2016-03-08T23:04:50+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000606s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000805s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001483s ]
+
+[ 2016-03-08T23:05:00+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 10,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000638s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001378s ]
+
+[ 2016-03-08T23:05:04+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 20,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000893s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001204s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-03-08T23:05:08+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 30,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-03-08T23:05:11+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 40,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000805s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2016-03-08T23:05:17+08:00 ] ::1 /1fengou/index.php/home/Manage/editProduct/id/77
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000448s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000647s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2016-03-08T23:05:20+08:00 ] ::1 /1fengou/index.php/home/Manage/saveProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\code\WampServer\wamp64\www\1fengou\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 96 行.
+NOTIC: [8] Undefined index: validate D:\code\WampServer\wamp64\www\1fengou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\code\WampServer\wamp64\www\1fengou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_product` SET `name`='33333',`price`='3333',`introduce`='33333333333',`thumbnail`='Resources/Images2016-03-08/56deea30e6068.png' WHERE `id` = 77 [ RunTime:0.0006s ]
+
+[ 2016-03-08T23:05:22+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002357s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000658s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000871s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005168s ]
+
+[ 2016-03-08T23:05:34+08:00 ] ::1 /1fengou/index.php/Home/Manage/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002131s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 40,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000605s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000817s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002868s ]
+
+[ 2016-03-08T23:05:55+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000605s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002739s ]
+
+[ 2016-03-08T23:06:10+08:00 ] ::1 /1fengou/index.php/home/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002775s ]
+NOTIC: [8] Undefined variable: param D:\code\WampServer\wamp64\www\1fengou\Application\Home\Controller\ManageController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_product` WHERE (  1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000603s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Undefined variable: totalPages D:\code\WampServer\wamp64\www\1fengou\Application\Runtime\Cache\Home\f2ed2d116ee9faa6b5ea1d732a76329f.php 第 756 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003289s ]
+

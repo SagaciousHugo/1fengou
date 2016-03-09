@@ -102,12 +102,16 @@
             var rd = $(o).find('[name=product]');
         }
 
-        function productSearch(){
-            var serContent = $("#query").val();
-            if(serContent != ""){
+        function productSearch(searchType){
+            var serID = $("#queryID").val();
+            var serName = $("#queryName").val();
+            var serPrice = $("#queryPrice").val();
+
+            if(!(serID == "" && serName == "" && serPrice == "")){
                 $.ajax({
-                    type:"GET",
-                    url : "http://localhost/1fengou/index.php/home/Manage/index/type/search/id/" +  serContent ,
+                    type:"POST",
+                    url : "http://localhost/1fengou/index.php/home/Manage/index/type/search" ,
+                    data :$("#queryForm").serialize(),
                     success:function(data){
                         $("#manageTable").html(data);
                     }
@@ -153,7 +157,7 @@
                             <div class="box-body">
                                 <div class="dataTables_wrapper form-inline dt-bootstrap">
                                     <div class="row">
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-3">
                                             <div class="dataTables_length" id="example1_length">
                                                 <label>每页显示
                                                     <select name="example1_length" aria-controls="example1" class="form-control input-sm" id="showPerPage">
@@ -165,16 +169,29 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div id="example1_filter" class="dataTables_filter">
-                                                <div class="form-group">
-                                                    <label for="query">查询商品ID:
-                                                        <input id="query" type="search" class="form-control input-sm" placeholder="请输入商品ID" aria-controls="example1">
-                                                    </label>
-                                                </div>
+                                        <div class="col-lg-7">
+                                            <div class="input-group">
+                                                <form id="queryForm">
+                                                    <input id="queryID" name="id" type="search" placeholder="请输入商品ID" class="form-control"style="width:25%">
+                                                    <input id="queryName" name="name" type="search" placeholder="请输入商品名称" class="form-control"style="width:25%">
+                                                    <input id="queryPrice" name="price" type="search" placeholder="请输入商品价格" class="form-control"style="width:25%">
+                                                </form>
+                                               <!-- &lt;!&ndash;暂时勿删&ndash;&gt;
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        按ID查询 <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="javascript:productSearch('byId')">按ID查询</a></li>
+                                                        <li><a href="javascript:productSearch('byName')">按名称查询</a></li>
+                                                        <li><a href="javascript:productSearch('byPrice')">按价格查询</a></li>
+                                                    </ul>
+                                                </div>-->
                                                 <a class="btn btn-success btn-lg btn-sm active" role="button" href="javascript:productSearch()">查询</a>
                                                 <a class="btn btn-primary btn-lg btn-sm active" role="button" href="javascript:reset()">重置</a>
                                             </div>
+
+
                                         </div>
 
                                         <div class="col-lg-2">

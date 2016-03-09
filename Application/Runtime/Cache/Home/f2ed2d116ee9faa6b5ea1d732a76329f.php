@@ -127,9 +127,10 @@
             }).get().slice(0,re);
 
             $.ajax({
-                type: "GET",
-                url: "http://localhost/1fengou/index.php/home/Manage/deleteProduct/id/" + selectedList,
-                dataType:'json',
+/*                type: "GET",
+                url: "http://localhost/1fengou/index.php/home/Manage/deleteProduct/id",
+                data: selectedList,
+                dataType:'json',*/
                 success: function ($data) {
                     if($data.status == 'success'){
                         $(".modal-backdrop").remove();

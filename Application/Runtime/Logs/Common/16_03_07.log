@@ -220,3 +220,15 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
 ERR: 无法加载模块:Public
 
+[ 2016-03-07T22:01:42+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-07T22:08:44+08:00 ] ::1 /1fengou/Public/%E7%BC%A9%E7%95%A5%E5%9B%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+ERR: 无法加载模块:Public
+

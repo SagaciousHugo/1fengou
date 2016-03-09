@@ -82,9 +82,10 @@
                 var perPage = $("#showPerPage").val();
                 $.ajax({
                     type:"GET",
+                    data:$("#queryFormHide").serialize(),
                     url: "http://localhost/1fengou/index.php/home/Manage/index/p/1/pageCount/" + perPage + "/type/ajax",
                     success:function(data){
-                        $("#manageTable").html(data);
+                        $("#contentDiv").html(data);
                     }
                 });
             })
@@ -165,11 +166,11 @@
 
             if(!(serID == "" && serName == "" && serPrice == "")){
                 $.ajax({
-                    type:"POST",
+                    type:"GET",
                     url : "http://localhost/1fengou/index.php/home/Manage/index/type/search" ,
                     data :$("#queryForm").serialize(),
                     success:function(data){
-                        $("#manageTable").html(data);
+                        $("#contentDiv").html(data);
                     }
                 })
             } else {
@@ -624,9 +625,14 @@
                                         <div class="col-lg-7">
                                             <div class="input-group">
                                                 <form id="queryForm">
-                                                    <input id="queryID" name="id" type="search" placeholder="请输入商品ID" class="form-control"style="width:25%">
-                                                    <input id="queryName" name="name" type="search" placeholder="请输入商品名称" class="form-control"style="width:25%">
-                                                    <input id="queryPrice" name="price" type="search" placeholder="请输入商品价格" class="form-control"style="width:25%">
+                                                    <input id="queryID" name="id" value="<?php echo ($id); ?>" type="search" placeholder="请输入商品ID" class="form-control"style="width:25%">
+                                                    <input id="queryName" name="name" value="<?php echo ($name); ?>" type="search" placeholder="请输入商品名称" class="form-control"style="width:25%">
+                                                    <input id="queryPrice" name="price" value="<?php echo ($price); ?>" type="search" placeholder="请输入商品价格" class="form-control"style="width:25%">
+                                                </form>
+                                                <form id="queryFormHide" style="display:none">
+                                                    <input id="queryID" name="id" value="<?php echo ($id); ?>" type="search" placeholder="请输入商品ID" class="form-control"style="width:25%">
+                                                    <input id="queryName" name="name" value="<?php echo ($name); ?>" type="search" placeholder="请输入商品名称" class="form-control"style="width:25%">
+                                                    <input id="queryPrice" name="price" value="<?php echo ($price); ?>" type="search" placeholder="请输入商品价格" class="form-control"style="width:25%">
                                                 </form>
                                                <!-- &lt;!&ndash;暂时勿删&ndash;&gt;
                                                 <div class="input-group-btn">

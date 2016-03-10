@@ -1,7 +1,8 @@
 <!--表格正文-->
 <div class="col-lg-12">
-    <table id="productInfo" class="table table-bordered table-striped table-hover" style="table-layout:fixed ; ">
-        <thead>
+    <div class="table-responsive">
+        <table id="productInfo" class="table table-bordered table-striped table-hover" style="table-layout:fixed ; ">
+            <thead>
             <tr>
                 <th>
                     <input type="checkbox" id="selectAll" class="inputSelect"/>
@@ -29,8 +30,8 @@
                     操作
                 </th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <div id="listContent">
                 <volist name="productList" id="vo">
                     <tr onclick="javascript:myclick(this)">
@@ -53,7 +54,7 @@
                             {$vo['sales']}
                         </td>
                         <td align="center">
-                            <img width="150" height="150" src="__PUBLIC__/{$vo['thumbnail']}" alt="商品缩略图"/>
+                            <img class="img-responsive" src="__PUBLIC__/{$vo['thumbnail']}" alt="商品缩略图"/>
                         </td>
                         <td align="center">
                             <a class=".btn.btn-app" href="http://localhost/1fengou/index.php/home/Manage/editProduct/id/{$vo['id']}">
@@ -63,8 +64,8 @@
                     </tr>
                 </volist>
             </div>
-        </tbody>
-        <tfoot>
+            </tbody>
+            <tfoot>
             <tr>
                 <th>
                     <input type="checkbox" id="selectAll2"/>全选
@@ -77,8 +78,9 @@
                 <th class="tableHead">商品缩略图</th>
                 <th class="tableHead">操作</th>
             </tr>
-        </tfoot>
-    </table>
+            </tfoot>
+        </table>
+    </div>
 </div>
 
 <!--表格底部-->

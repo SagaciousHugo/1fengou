@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -33,7 +33,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">请填写登录信息</p>
 
-    <form action="{:U('login')}" method="post" >
+    <form action="<?php echo U('login');?>" method="post" >
       <div class="form-group has-feedback">
         <input type="username" class="form-control" placeholder="用户名/邮箱/手机号码">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

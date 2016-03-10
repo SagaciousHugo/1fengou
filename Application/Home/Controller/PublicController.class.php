@@ -22,16 +22,19 @@ class PublicController extends  Controller
                  session('user_auth',$uid);
                  session('user_name',I('username'));
                  session('user_auth_sign', $uid.'woshimingming');
-                 $this->success('登陆成功！',U('Index/index'));
+                 /*$this->success('登陆成功！',U('Index/index'));*/
+                 $this->redirect('Index/index');
              }else{
                  //登陆失败
-                 $this->redirect('login','',5,'登陆失败，请重新登陆！');
+                 $this->assign('message','用户名或密码错误！');
+                 $this->display();
              }
          }
          else{
             if($this->is_login()){
                 $this->redirect('Index/index');
             }else{
+                $this->assign('message','请登录！');
                 $this->display();
             }
 
@@ -45,7 +48,8 @@ class PublicController extends  Controller
             session('user_auth', null);
             session('user_auth_sign', null);
             session('[destroy]');
-            $this->success('退出成功！', U('login'));
+            /*$this->success('退出成功！', U('login'));*/
+            $this->redirect('login');
         } else {
             $this->redirect('login');
         }

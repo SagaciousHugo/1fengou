@@ -6,8 +6,7 @@
  * Time: 15:22
  */
 namespace Home\Controller;
-use Think\Controller;
-class ManageController extends Controller
+class ManageController extends BaseController
 {
     //列表查询:包括-每页显示数量变化的查询，分页查询，按商品id搜索查询
     public function index($type=null,$pageCount=10)

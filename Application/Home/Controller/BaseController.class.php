@@ -11,11 +11,12 @@ use Think\Controller;
 class BaseController extends Controller
 {
     function __construct(){
-       /* $public = new \Home\Controller\PublicController();
+        parent::__construct();
+        $public = new \Home\Controller\PublicController();
         $is_login = $public->is_login();
        if(!$is_login){
-          dump($is_login);
-        }*/
+        $this->redirect('Public/login');
+        }
 
     }
 }

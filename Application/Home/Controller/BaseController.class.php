@@ -17,6 +17,6 @@ class BaseController extends Controller
        if(!$is_login){
         $this->redirect('Public/login');
         }
-
     }
+
 }

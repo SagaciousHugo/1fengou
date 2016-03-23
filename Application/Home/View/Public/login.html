@@ -1,130 +1,108 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>欢迎您登录1fengou</title>
-        <!--<link rel="stylesheet" type="text/css" href="__CSS__/login.css" media="all">
-       	<link rel="stylesheet" type="text/css" href="__CSS__/{$Think.config.COLOR_STYLE}.css" media="all">-->
-    </head>
-    <body id="login-page">
-        <div id="main-content">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>1fen-gou | 登录</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="/1fengou/Public/css/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/1fengou/Public/css/font-awesome-4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/1fengou/Public/css/ionicons-2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/1fengou/Public/AdminLTE/dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="/1fengou/Public/AdminLTE/plugins/iCheck/square/blue.css">
 
-            <!-- 主体 -->
-            <div class="login-body">
-                <div class="login-main pr">
-                    <form action="{:U('login')}" method="post" class="login-form">
-                        <h3 class="welcome"><i class="login-logo"></i>1fengou管理平台</h3>
-                        <div id="itemBox" class="item-box">
-                            <div class="item">
-                                <i class="icon-login-user"></i>
-                                <input type="text" name="username" placeholder="请填写用户名" autocomplete="off" />
-                            </div>
-                            <span class="placeholder_copy placeholder_un">请填写用户名</span>
-                            <div class="item b0">
-                                <i class="icon-login-pwd"></i>
-                                <input type="password" name="password" placeholder="请填写密码" autocomplete="off" />
-                            </div>
-                            <span class="placeholder_copy placeholder_pwd">请填写密码</span>
-                            <!--<div class="item verifycode">
-                                <i class="icon-login-verifycode"></i>
-                                <input type="text" name="verify" placeholder="请填写验证码" autocomplete="off">
-                                <a class="reloadverify" title="换一张" href="javascript:void(0)">换一张？</a>
-                            </div>
-                           <span class="placeholder_copy placeholder_check">请填写验证码</span>
-                            <div>
-                                <img class="verifyimg reloadverify" alt="点击切换" src="{:U('Public/verify')}">
-                            </div>-->
-                        </div>
-                        <div class="login_btn_panel">
-                            <button class="login-btn" type="submit">
-                              <!--  <span class="in"><i class="icon-loading"></i>登 录 中 ...</span>-->
-                                <span class="on">登 录</span>
-                            </button>
-                            <div class="check-tips"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="/1fengou/Public/js/html5shiv-3.7.3/html5shiv.min.js"></script>
+  <script src="/1fengou/Public/js/respond-1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="#"><b>1fen</b>GOU</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">请填写登录信息</p>
+
+    {$message}
+    <form action="{:U('login')}" method="post" >
+      <div class="form-group has-feedback">
+        <input type="username" name="username" class="form-control" placeholder="用户名/邮箱/手机号码">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" name="password" class="form-control" placeholder="密码">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="verify" name="verify" class="form-control" placeholder="验证码">
+        <img src="http://localhost/1fengou/index.php/Home/Public/verify" id="verifyImg"onClick="fleshVerify()" title="点击刷新验证码">
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> 记住我
+            </label>
+          </div>
         </div>
-	<!--[if lt IE 9]>
-    <script type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
-    <![endif]
-    &lt;!&ndash;[if gte IE 9]>&lt;!&ndash;dash;&gt;
-    <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
-    &lt;!&ndash;<![endif]&ndash;&gt;
-    <script type="text/javascript">
-    	/* 登陆表单获取焦点变色 */
-    	$(".login-form").on("focus", "input", function(){
-            $(this).closest('.item').addClass('focus');
-        }).on("blur","input",function(){
-            $(this).closest('.item').removeClass('focus');
-        });
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
 
-    	//表单提交
-    	$(document)
-	    	.ajaxStart(function(){
-	    		$("button:submit").addClass("log-in").attr("disabled", true);
-	    	})
-	    	.ajaxStop(function(){
-	    		$("button:submit").removeClass("log-in").attr("disabled", false);
-	    	});
+    <div class="social-auth-links text-center">
+      <p>可通过以下方式登录</p>
+      <a href="#" class="btn btn-block btn-social btn-weixin btn-flat"><i class="fa fa-weixin"></i> 使用微信登录</a>
+      <a href="#" class="btn btn-block btn-social btn-qq btn-flat"><i class="fa fa-qq"></i> 使用QQ登录</a>
+    </div>
+    <!-- /.social-auth-links -->
 
-    	$("form").submit(function(){
-    		var self = $(this);
-    		$.post(self.attr("action"), self.serialize(), success, "json");
-    		return false;
+    <div class="row">
+      <div class="col-xs-8">
+        <a href="#">忘记密码？</a>
+      </div>
+      <div class="col-xs-4">
+        <a href="#" class="text-center">注册新用户</a>
+      </div>
+    </div>
 
-    		function success(data){
-    			if(data.status){
-    				window.location.href = data.url;
-    			} else {
-    				self.find(".check-tips").text(data.info);
-    				//刷新验证码
-    				$(".reloadverify").click();
-    			}
-    		}
-    	});
 
-		$(function(){
-			//初始化选中用户名输入框
-			$("#itemBox").find("input[name=username]").focus();
-			//刷新验证码
-			var verifyimg = $(".verifyimg").attr("src");
-            $(".reloadverify").click(function(){
-                if( verifyimg.indexOf('?')>0){
-                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
-                }else{
-                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
-                }
-            });
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
 
-            //placeholder兼容性
-                //如果支持 
-            function isPlaceholer(){
-                var input = document.createElement('input');
-                return "placeholder" in input;
-            }
-                //如果不支持
-            if(!isPlaceholer()){
-                $(".placeholder_copy").css({
-                    display:'block'
-                })
-                $("#itemBox input").keydown(function(){
-                    $(this).parents(".item").next(".placeholder_copy").css({
-                        display:'none'
-                    })                    
-                })
-                $("#itemBox input").blur(function(){
-                    if($(this).val()==""){
-                        $(this).parents(".item").next(".placeholder_copy").css({
-                            display:'block'
-                        })                      
-                    }
-                })
-                
-                
-            }
-		});
-    </script>-->
+<!-- jQuery 2.1.4 -->
+<script src="/1fengou/Public/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="/1fengou/Public/css/bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="/1fengou/Public/AdminLTE/plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+  function fleshVerify(){
+    var time = new Date().getTime();
+    document.getElementById('verifyImg').src= 'http://localhost/1fengou/index.php/Home/Public/verify/'+time;
+  }
+</script>
 </body>
 </html>

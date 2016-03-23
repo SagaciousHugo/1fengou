@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>1fengou</title>
+        <title>1fen-gou</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.5 -->
@@ -128,9 +128,10 @@
             }).get().slice(0,re);
 
             $.ajax({
-                type: "GET",
-                url: "http://localhost/1fengou/index.php/home/Manage/deleteProduct/id/" + selectedList,
-                dataType:'json',
+/*                type: "GET",
+                url: "http://localhost/1fengou/index.php/home/Manage/deleteProduct/id",
+                data: selectedList,
+                dataType:'json',*/
                 success: function ($data) {
                     if($data.status == 'success'){
                         $(".modal-backdrop").remove();
@@ -201,7 +202,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>1</b>FG</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>1</b>fengou</span>
+        <span class="logo-lg"><b>1</b>fen-gou</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -662,8 +663,9 @@
                                     <div id="manageTable">
                                         <!--表格正文-->
 <div class="col-lg-12">
-    <table id="productInfo" class="table table-bordered table-striped table-hover" style="table-layout:fixed ; ">
-        <thead>
+    <div class="table-responsive">
+        <table id="productInfo" class="table table-bordered table-striped table-hover" style="table-layout:fixed ; ">
+            <thead>
             <tr>
                 <th>
                     <input type="checkbox" id="selectAll" class="inputSelect"/>
@@ -691,8 +693,8 @@
                     操作
                 </th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <div id="listContent">
                 <?php if(is_array($productList)): $i = 0; $__LIST__ = $productList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr onclick="javascript:myclick(this)">
                         <td>
@@ -714,7 +716,7 @@
                             <?php echo ($vo['sales']); ?>
                         </td>
                         <td align="center">
-                            <img width="150" height="150" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
+                            <img class="img-responsive" src="/1fengou/Public/<?php echo ($vo['thumbnail']); ?>" alt="商品缩略图"/>
                         </td>
                         <td align="center">
                             <a class=".btn.btn-app" href="http://localhost/1fengou/index.php/home/Manage/editProduct/id/<?php echo ($vo['id']); ?>">
@@ -723,8 +725,8 @@
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
-        </tbody>
-        <tfoot>
+            </tbody>
+            <tfoot>
             <tr>
                 <th>
                     <input type="checkbox" id="selectAll2"/>全选
@@ -737,8 +739,9 @@
                 <th class="tableHead">商品缩略图</th>
                 <th class="tableHead">操作</th>
             </tr>
-        </tfoot>
-    </table>
+            </tfoot>
+        </table>
+    </div>
 </div>
 
 <!--表格底部-->

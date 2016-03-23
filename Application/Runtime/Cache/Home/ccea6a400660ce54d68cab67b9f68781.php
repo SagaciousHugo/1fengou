@@ -33,19 +33,14 @@
   <div class="login-box-body">
     <p class="login-box-msg">请填写登录信息</p>
 
-    <?php echo ($message); ?>
     <form action="<?php echo U('login');?>" method="post" >
       <div class="form-group has-feedback">
-        <input type="username" name="username" class="form-control" placeholder="用户名/邮箱/手机号码">
+        <input type="username" class="form-control" placeholder="用户名/邮箱/手机号码">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="密码">
+        <input type="password" class="form-control" placeholder="密码">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="verify" name="verify" class="form-control" placeholder="验证码">
-        <img src="http://localhost/1fengou/index.php/Home/Public/verify" id="verifyImg"onClick="fleshVerify()" title="点击刷新验证码">
       </div>
       <div class="row">
         <div class="col-xs-8">
@@ -64,21 +59,14 @@
     </form>
 
     <div class="social-auth-links text-center">
-      <p>可通过以下方式登录</p>
+      <p>- OR -</p>
       <a href="#" class="btn btn-block btn-social btn-weixin btn-flat"><i class="fa fa-weixin"></i> 使用微信登录</a>
       <a href="#" class="btn btn-block btn-social btn-qq btn-flat"><i class="fa fa-qq"></i> 使用QQ登录</a>
     </div>
     <!-- /.social-auth-links -->
 
-    <div class="row">
-      <div class="col-xs-8">
-        <a href="#">忘记密码？</a>
-      </div>
-      <div class="col-xs-4">
-        <a href="#" class="text-center">注册新用户</a>
-      </div>
-    </div>
-
+    <a href="#">忘记密码？</a><br>
+    <a href="#" class="text-center">注册新用户</a>
 
   </div>
   <!-- /.login-box-body -->
@@ -99,10 +87,6 @@
       increaseArea: '20%' // optional
     });
   });
-  function fleshVerify(){
-    var time = new Date().getTime();
-    document.getElementById('verifyImg').src= 'http://localhost/1fengou/index.php/Home/Public/verify/'+time;
-  }
 </script>
 </body>
 </html>

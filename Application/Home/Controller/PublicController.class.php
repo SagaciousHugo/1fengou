@@ -13,29 +13,40 @@ class PublicController extends  Controller
 {
 
      public function login(){
-         if(IS_POST){
-             $User = D('User');
-             $uid = $User->login(I('username'),I('password'));
-             if($uid>0){
-                 //登陆成功
-                 /* 记录登录SESSION和COOKIES */
-                 session('user_auth',$uid);
-                 session('user_name',I('username'));
-                 session('user_auth_sign', $uid.'woshimingming');
-                 $this->success('登陆成功！',U('Index/index'));
-             }else{
-                 //登陆失败
-                 $this->redirect('login','',5,'登陆失败，请重新登陆！');
+         if(IS_POST) {
+             if (!check_verify(I('verify'))) {
+                 $this->assign('message', '验证码错误！');
+                 $this->display();
+             } else {
+                 $User = D('User');
+                 $uid = $User->login(I('username'), I('password'));
+                 if ($uid > 0) {
+                     //登陆成功
+                     /* 记录登录SESSION和COOKIES */
+                     session('user_auth', $uid);
+                     session('user_name', I('username'));
+                     session('user_auth_sign', $uid . 'woshimingming');
+                     /*$this->success('登陆成功！',U('Index/index'));*/
+                     $this->redirect('Index/index');
+                 } else {
+                     //登陆失败
+                     $this->assign('message', '用户名或密码错误！');
+                     $Verify->entry();
+                     $this->display();
+                 }
+
+             }
+         }else {
+             if ($this->is_login()) {
+                 $this->redirect('Index/index');
+             } else {
+                 $this->assign('message', '请登录！');
+                 $this->display();
              }
          }
-         else{
-            if($this->is_login()){
-                $this->redirect('Index/index');
-            }else{
-                $this->display();
-            }
 
-         }
+
+
 
 
     }
@@ -45,7 +56,8 @@ class PublicController extends  Controller
             session('user_auth', null);
             session('user_auth_sign', null);
             session('[destroy]');
-            $this->success('退出成功！', U('login'));
+            /*$this->success('退出成功！', U('login'));*/
+            $this->redirect('login');
         } else {
             $this->redirect('login');
         }
@@ -58,4 +70,13 @@ class PublicController extends  Controller
             return session('user_auth_sign') == $user.'woshimingming' ? $user['uid'] : 0;
         }
     }
+
+    public function verify(){
+        $Verify =     new \Think\Verify();
+        $Verify->codeSet = '0123456789';
+        $Verify->length = 3;
+        $Verify->entry();
+    }
+
+
 }
